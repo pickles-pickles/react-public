@@ -16,7 +16,7 @@ const NavigationBar = () => {
                 <div className="container">
                     <Nav className="navbar">
                         <NavItem className="nav-item">
-                            <Link className="nav-link  col-sm-5 col-md-4" to="/home" ><span className="fa fa-home mr-1"></span>Home</Link>
+                            <Link className="nav-link  col-sm-5 col-md-4" to="/" ><span className="fa fa-home mr-1"></span>Home</Link>
                         </NavItem>
                         <NavItem className="nav-item">
                             <Link className="nav-link  col-sm-5 col-md-4" to="/portfolio"><span className="fa fa-address-card mr-1"></span>Portfolio</Link>
@@ -31,7 +31,7 @@ const NavigationBar = () => {
                 </div>
 
                 <Switch>
-                    <Route path="/home" component={Home}></Route>
+                    <Route exact path="/" component={Home}></Route>
                     <Route path="/portfolio" component={Portfolio}></Route>
                     <Route path="/about" component={About}></Route>
                     <Route path="/contact" component={Contact}></Route>
