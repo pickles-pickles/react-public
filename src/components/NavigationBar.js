@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, NavItem, } from 'reactstrap';
 import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import About from './About';

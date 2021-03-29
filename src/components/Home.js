@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from './Form';
 import imageHome from '../assets/laptop.jpg';
 
