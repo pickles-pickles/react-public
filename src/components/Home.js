@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Form from './Form';
+import imageHome from '../assets/laptop.jpg';
 
 const Home = () => {
 
@@ -13,7 +14,7 @@ const Home = () => {
                   col-lg-6 offset-lg-0
                   order-md-last
                   text-center">
-                    <img id="personal-image" src="assets/laptop.jpg" alt="Personal" />
+                    <img id="personal-image" src={imageHome} alt="Personal" />
                 </div>
                 <div className="col-sm-12 text-center  col-lg-6">
                     <h1 id="title">I am Christos Georgakopoulos</h1>
