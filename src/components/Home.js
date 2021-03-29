@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="col-sm-12
                 col-md-8 offset-md-2
                   col-lg-6 offset-lg-0
-                  order-md-last
+                  order-lg-last
                   text-center">
                     <img id="personal-image" src={imageHome} alt="Personal" />
                 </div>
