@@ -1,6 +1,6 @@
 //A brief summary and resumé
-
 import React from 'react';
+import imageAbout from '../assets/standing-pocket.jpg';
 
 const About = () => {
 
@@ -12,7 +12,7 @@ const About = () => {
                 col-md-8 offset-md-2
                 text-center">
                     <img id="about-image"
-                        src="assets/standing-pocket.jpg" alt="Me" />
+                        src={imageAbout} alt="Me" />
                 </div>
             </div>
 
