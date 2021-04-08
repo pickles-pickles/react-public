@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavItem, } from 'reactstrap';
-import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import About from './About';
