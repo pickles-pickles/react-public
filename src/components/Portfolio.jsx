@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 const Portfolio = () => {
 
@@ -12,10 +11,10 @@ const Portfolio = () => {
     It consists mainly of React apps I deployed to Netlify.
 </p>
 <p>Some apps include:</p>
-<p className="text"> <Link to="https://e-magazi.netlify.app/cart">A demo e-shop</Link></p>
-<p className="text"><Link to="https://o-kairos-simera.netlify.app/">A Weather app connected to an API</Link></p>
-<p className="text"><Link to="https://to-do-app-3000.netlify.app/">A simple to-do list app </Link></p>
-<p className="text"><Link to="https://pickles-pickles.github.io/">A funny gh-pages site </Link></p>
+<p className="text"> <a href="https://e-magazi.netlify.app/" target="_blank" rel="noreferrer">A demo e-shop</a></p>
+<p className="text"><a href="https://o-kairos-simera.netlify.app/" target="_blank" rel="noreferrer">A Weather app connected to an API</a></p>
+<p className="text"><a href="https://to-do-app-3000.netlify.app/" target="_blank" rel="noreferrer">A simple to-do list app </a></p>
+<p className="text"><a href="https://pickles-pickles.github.io/" target="_blank" rel="noreferrer">A funny gh-pages site </a></p>
 </div>
     )
 }
