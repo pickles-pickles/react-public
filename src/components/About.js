@@ -33,14 +33,14 @@ const About = () => {
             <li>SEO</li>
             <li>HTML</li>
             <li>CSS(SCSS &LESS)</li>
-            <li>WordPress</li>
+            <li>jQuery</li>
           </ul>
         </div>
         <div className='col-6'>
           <ul>
             <li>Javascript</li>
             <li>React.js</li>
-            <li>Bootstrap 4</li>
+            <li>Bootstrap</li>
             <li>git</li>
           </ul>
         </div>
