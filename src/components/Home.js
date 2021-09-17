@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Form from './Form'
-import imageHome from '../assets/laptop.jpg'
+import imageHome from '../assets/laptop-Copy.jpg'
 
 const Home = () => {
   return (

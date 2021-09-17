@@ -1,6 +1,6 @@
 //A brief summary and resumé
 import React from 'react'
-import imageAbout from '../assets/standing-pocket.jpg'
+import imageAbout from '../assets/standing-pocket-Copy.jpg'
 
 const About = () => {
   return (
