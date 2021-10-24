@@ -112,3 +112,37 @@ footer p {
 #success-button {
   width: 100%;
 }
+
+.animation-box {
+  animation: opacity-on-load 2s;
+}
+
+.slide-up {
+  animation: slide-up 2s;
+}
+
+.slide-up-25 {
+  animation: slide-up 2.5s;
+}
+
+.slide-up-30 {
+  animation: slide-up 3s;
+}
+
+@keyframes opacity-on-load {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    line-height: 400%;
+  }
+  to {
+    line-height: 150%;
+  }
+}

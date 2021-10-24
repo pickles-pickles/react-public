@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Form from './Form'
-import imageHome from '../assets/laptop-Copy.jpg'
+import imageHome from '../assets/laptop.jpg'
 
 const Home = () => {
   return (
@@ -16,10 +16,14 @@ const Home = () => {
         >
           <img id='personal-image' src={imageHome} alt='Personal' />
         </div>
-        <div className='col-sm-12 text-center  col-lg-6'>
+        <div className='col-sm-12 text-center col-lg-6  slide-up'>
           <h1 id='title'>I am Christos Georgakopoulos</h1>
-          <h2 id='subtitle'>Graduate student in Software Engineering</h2>
-          <h2 id='subtitle-smaller'>Junior front-end developer</h2>
+          <h2 id='subtitle' className=''>
+            Graduate student in Software Engineering
+          </h2>
+          <h2 id='subtitle-smaller' className=''>
+            Junior front-end developer
+          </h2>
 
           <p className='text'>
             I love front-end development, as my work is very close to the final
