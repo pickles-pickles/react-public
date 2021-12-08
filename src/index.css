@@ -12,28 +12,13 @@ code {
     monospace;
 }
 
-#personal-image {
-  width: 75%;
-  height: 80%;
-  border-radius: 50%;
+footer hr {
+  border-top: 5px solid black;
 }
 
-#title {
-  font-size: 280%;
-}
-
-#subtitle {
-  font-size: 200%;
-}
-
-#subtitle-smaller {
-  font-size: 170%;
-}
-
-.text {
+footer p {
   font-size: 120%;
-  margin-left: 20px;
-  margin-right: 20px;
+  color: darkgrey;
 }
 
 form {
@@ -61,37 +46,17 @@ form #message-area-about {
   width: 80%;
 }
 
-.navbar {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: justify !important;
-  -ms-flex-pack: justify !important;
-  justify-content: space-between !important;
-}
-
-.navbar .nav-link {
-  color: grey !important;
-}
-
-footer hr {
-  border-top: 5px solid black;
-}
-
-footer p {
-  font-size: 120%;
-  color: darkgrey;
-}
-
-#about-image {
-  width: 65%;
-  height: 70%;
-  border-radius: 50%;
-}
-
 .icon {
   margin-right: 20px;
 }
+
+.sth {
+  margin-top: -60px;
+}
+
+/* .animation-box {
+  animation: opacity-on-load 2s;
+} */
 
 .fa-linkedin {
   color: blue;
@@ -105,16 +70,17 @@ footer p {
   color: red;
 }
 
-.sth {
-  margin-top: -60px;
+.navbar {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
 }
 
-#success-button {
-  width: 100%;
-}
-
-.animation-box {
-  animation: opacity-on-load 2s;
+.navbar .nav-link {
+  color: grey !important;
 }
 
 .slide-up {
@@ -129,14 +95,48 @@ footer p {
   animation: slide-up 3s;
 }
 
-@keyframes opacity-on-load {
+.text {
+  font-size: 120%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#about-image {
+  width: 65%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+#personal-image {
+  width: 75%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+#subtitle {
+  font-size: 200%;
+}
+
+#subtitle-smaller {
+  font-size: 170%;
+}
+
+#success-button {
+  width: 100%;
+}
+
+#title {
+  font-size: 280%;
+}
+
+/* @keyframes opacity-on-load {
   from {
     opacity: 0.2;
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 @keyframes slide-up {
   from {
