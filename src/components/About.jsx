@@ -1,6 +1,7 @@
 //A brief summary and resumé
 import React from 'react'
 import imageAbout from '../assets/standing-pocket.jpg'
+import imageAboutMobile from '../assets/standing-pocket-mobile.jpg'
 
 const About = () => {
   return (
@@ -11,6 +12,9 @@ const About = () => {
                 col-md-8 offset-md-2
                 text-center'
         >
+          <picture>
+            <source media='(max-width: 664px )' srcset={imageAboutMobile} />
+          </picture>
           <img id='about-image' src={imageAbout} alt='Me' />
         </div>
       </div>

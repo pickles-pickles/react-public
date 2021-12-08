@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Form from './Form'
 import imageHome from '../assets/laptop.jpg'
+import imageHomeMobile from '../assets/laptop-mobile.jpg'
 
 const Home = () => {
   return (
@@ -14,7 +15,10 @@ const Home = () => {
                   order-lg-last
                   text-center'
         >
-          <img id='personal-image' src={imageHome} alt='Personal' />
+          <picture>
+            <source media='(max-width: 664px)' srcset={imageHomeMobile} />
+            <img id='personal-image' src={imageHome} alt='Personal' />
+          </picture>
         </div>
         <div className='col-sm-12 text-center col-lg-6  slide-up'>
           <h1 id='title'>I am Christos Georgakopoulos</h1>
