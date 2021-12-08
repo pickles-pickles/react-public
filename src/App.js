@@ -8,7 +8,9 @@ const Main = React.lazy(() => import('./components/Main'))
 function App () {
   return (
     <div className='App'>
-      <Main />
+      <React.Suspense fallback={<h2>Component Loading ...</h2>}>
+        <Main />
+      </React.Suspense>
     </div>
   )
 }
