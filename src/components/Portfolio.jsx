@@ -6,8 +6,9 @@ const Portfolio = () => {
       <h1>Portfolio</h1>
 
       <p>
-        I am currently building my portfolio and it grows bigger day by day. It
-        consists mainly of React apps I deployed to Netlify.
+        I am currently publishing my work and building my online portfolio It
+        grows bigger day by day! It consists mainly of React apps I deployed to
+        Netlify.
       </p>
       <p>Some apps include:</p>
       <div className='slide-up'>
@@ -46,6 +47,16 @@ const Portfolio = () => {
             rel='noreferrer'
           >
             A funny gh-pages site{' '}
+          </a>
+        </p>
+        <p className='text'>
+          <a
+            href='https://github.com/pickles-pickles/recipes/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            A full-stack app with vanilla Javascript, Python with Flask and
+            mySQL{' '}
           </a>
         </p>
       </div>

@@ -23,10 +23,10 @@ const Home = () => {
         <div className='col-sm-12 text-center col-lg-6  slide-up'>
           <h1 id='title'>I am Christos Georgakopoulos</h1>
           <h2 id='subtitle' className=''>
-            Graduate student in Software Engineering
+            Passionate mid-level React developer
           </h2>
           <h2 id='subtitle-smaller' className=''>
-            Junior front-end developer
+            Open to opportunities
           </h2>
 
           <p className='text'>
@@ -34,11 +34,7 @@ const Home = () => {
             user. You can learn more
             <Link to='/about'>
               <b> about me</b>
-            </Link>
-            ,
-            <a href='https://drive.google.com/file/d/1MbQTbp1ZbGG5RAS6im6GgyTD_vB1JX2C/view?usp=sharing'>
-              <b> view my CV</b>
-            </a>{' '}
+            </Link>{' '}
             or send me a message.
           </p>
           <Form />
@@ -49,8 +45,3 @@ const Home = () => {
 }
 
 export default Home
-//Picture
-
-//Words or me
-
-//send me a message button

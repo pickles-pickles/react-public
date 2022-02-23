@@ -21,21 +21,16 @@ const About = () => {
       <div className='slice-up'>
         <div className='row text'>
           <p>
-            I am Christos Georgakopoulos, 27 yo. I am a graduate student in{' '}
-            <a
-              href='https://seima.ds.uth.gr/'
-              rel='noopener noreferrer'
-              target='_blank'
-            >
-              Software Enginnering for web and Mobile Applications{' '}
-            </a>
-            , University of Thessaly, Greece. My Bsc is on Materials Science &
-            Enginnering, University of Crete, Greek is my mother tongue and I
-            have a Proficiency degree in English.
+            I am Christos Georgakopoulos, 27 yo. I am a passionate front-end
+            developer that currently is expanding his online presence. My Bsc is
+            on Materials Science & Enginnering, University of Crete, Greek is my
+            mother tongue and I have a Proficiency degree in English. In my
+            spare time, I delve into full-stack, data analysis with RapidMiner
+            and strolling around quantum computation ideas.
           </p>
         </div>
         <p className='text'>
-          During the pandemic I decided to make a career change and become
+          During the pandemic, I decided to make a career change and become
           front-end development. I attended webinars and built projects with
           emphasis in the following areas:
         </p>
@@ -59,14 +54,14 @@ const About = () => {
         </div>
         <div className='row text'>
           <p>
-            I, also, currently attend{' '}
+            I, also, just graduated from{' '}
             <a
-              href='https://socialhackersacademy.org/'
+              href='https://www.lastingdynamics.com/academy/'
               rel='noopener noreferrer'
               target='_blank'
             >
               {' '}
-              Athens Social Hackers Academy{' '}
+              Lasting Dynamics Academy{' '}
             </a>
           </p>
         </div>
