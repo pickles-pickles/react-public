@@ -38,16 +38,16 @@ const About = () => {
           <div className='col-6'>
             <ul>
               <li>SEO</li>
-              <li>HTML</li>
-              <li>CSS(SCSS &LESS)</li>
+              <li>HTML, CSS(SCSS &LESS), Javascript</li>
               <li>jQuery</li>
+              <li>Bootstrap, Tailwind, Material UI</li>
             </ul>
           </div>
           <div className='col-6'>
             <ul>
-              <li>Javascript</li>
               <li>React.js</li>
-              <li>Bootstrap</li>
+              <li>Redux</li>
+              <li>Typescript</li>
               <li>git</li>
             </ul>
           </div>
@@ -64,6 +64,13 @@ const About = () => {
               Lasting Dynamics Academy{' '}
             </a>
           </p>
+        </div>
+        <div className='row text'>
+          You can view or download my CV from &nbsp;{' '}
+          <a href='https://drive.google.com/file/d/1lxt_M7WLeptIjoWkjM0g--whyXc9OxOP/view?usp=sharing'>
+            {' '}
+            my Google Drive{' '}
+          </a>
         </div>
       </div>
     </div>
