@@ -24,11 +24,11 @@ const Portfolio = () => {
         </p>
         <p className='text'>
           <a
-            href='https://o-kairos-simera.netlify.app/'
+            href='https://vermillion-weather.netlify.app/'
             target='_blank'
             rel='noreferrer'
           >
-            A Weather app connected to an API
+            A Weather app connected to two API
           </a>
         </p>
         <p className='text'>
