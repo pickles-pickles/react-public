@@ -33,7 +33,8 @@ const About = () => {
           </p>
         </div>
         <p className='text'>
-          During the pandemic, I decided to make a career change and become
+          During the pandemic, -almost 3 years before my Msc studies and my
+          first job as a web dev- I decided to make a career change and become
           front-end development. I attended webinars and built projects with
           emphasis in the following areas:
         </p>
