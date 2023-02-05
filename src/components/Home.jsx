@@ -6,7 +6,7 @@ import imageHomeMobile from '../assets/laptop-mobile.jpg'
 
 const Home = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container'>
       <div className='row mt-3'>
         <div
           className='col-sm-12

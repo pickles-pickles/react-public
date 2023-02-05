@@ -108,8 +108,8 @@ form #message-area-about {
 }
 
 #personal-image {
-  width: 75%;
-  height: 80%;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
@@ -149,5 +149,13 @@ form #message-area-about {
   }
   to {
     line-height: 150%;
+  }
+}
+
+@media screen and (min-width: 664px) {
+  #personal-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
   }
 }
