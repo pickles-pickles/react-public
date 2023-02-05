@@ -74,11 +74,12 @@ const About = () => {
         </div>
         <div className='row text'>
           You can view or download my CV from &nbsp;{' '}
-          <a href='https://drive.google.com/file/d/1lxt_M7WLeptIjoWkjM0g--whyXc9OxOP/view?usp=sharing'>
+          <a href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'>
             {' '}
             my Google Drive{' '}
           </a>
         </div>
+        <p className='row text'>If you believe that I have more </p>
       </div>
     </div>
   )
