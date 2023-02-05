@@ -117,8 +117,13 @@ form #message-area-about {
   font-size: 200%;
 }
 
-#subtitle-smaller {
+#subtitle-small {
   font-size: 170%;
+}
+
+#subtitle-smaller {
+  font-size: 150%;
+  color: #6b6b6b;
 }
 
 #success-button {

@@ -6,7 +6,7 @@ import imageHomeMobile from '../assets/laptop-mobile.jpg'
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='container-fluid'>
       <div className='row mt-3'>
         <div
           className='col-sm-12
@@ -16,7 +16,7 @@ const Home = () => {
                   text-center'
         >
           <picture>
-            <source media='(max-width: 664px)' srcset={imageHomeMobile} />
+            <source media='(max-width: 664px)' srcSet={imageHomeMobile} />
             <img id='personal-image' src={imageHome} alt='Personal' />
           </picture>
         </div>
@@ -26,6 +26,9 @@ const Home = () => {
             Passionate mid-level React developer
           </h2>
           <h2 id='subtitle-smaller' className=''>
+            Msc in Sotware Enginnering for Web and Mobile Applications
+          </h2>
+          <h2 id='subtitle-small' className=''>
             Open to opportunities
           </h2>
 

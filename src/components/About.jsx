@@ -18,15 +18,18 @@ const About = () => {
           <img id='about-image' src={imageAbout} alt='Me' />
         </div>
       </div>
-      <div className='slice-up'>
+      <div className='slide-up'>
         <div className='row text'>
           <p>
-            I am Christos Georgakopoulos, 27 yo. I am a passionate front-end
-            developer that currently is expanding his online presence. My Bsc is
-            on Materials Science & Enginnering, University of Crete, Greek is my
-            mother tongue and I have a Proficiency degree in English. In my
-            spare time, I delve into full-stack, data analysis with RapidMiner
-            and strolling around quantum computation ideas.
+            I am Christos Georgakopoulos, 29 yo. I am a passionate front-end
+            developer that currently is expanding his online presence. My{' '}
+            <b>Msc</b> in on <b>Software Engineering for Web and Mobile Apps</b>
+            , University of Thessaly. My thesis topic is:{' '}
+            <b>'Investigation and Implementation of Quntum Algorithms'</b>. My
+            Bsc is on <b>Materials Science & Enginnering</b>, University of
+            Crete, Greek is my mother tongue and I have a Proficiency degree in
+            English. In my spare time, I delve into full-stack, data analysis
+            with RapidMiner and strolling around quantum computation ideas.
           </p>
         </div>
         <p className='text'>
@@ -52,6 +55,9 @@ const About = () => {
             </ul>
           </div>
         </div>
+        <p className='row text'>
+          I have used Jira in a professional environment.
+        </p>
         <div className='row text'>
           <p>
             I, also, just graduated from{' '}
