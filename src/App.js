@@ -1,9 +1,13 @@
 import './App.css'
 import React from 'react'
 
-//import Main from './components/Main';
-
-const Main = React.lazy(() => import('./components/Main'))
+const Main = React.lazy(async () => {
+  const [moduleExports] = await Promise.all([
+    import('./components/Main'),
+    new Promise(resolve => setTimeout(resolve, 1000))
+  ])
+  return moduleExports
+})
 
 function App () {
   return (

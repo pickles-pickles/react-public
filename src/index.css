@@ -83,7 +83,7 @@ form #message-area-about {
   color: grey !important;
 }
 
-.slide-up {
+/* .slide-up {
   animation: slide-up 2s;
 }
 
@@ -93,7 +93,7 @@ form #message-area-about {
 
 .slide-up-30 {
   animation: slide-up 3s;
-}
+} */
 
 .text {
   font-size: 120%;
@@ -134,6 +134,15 @@ form #message-area-about {
   font-size: 280%;
 }
 
+@keyframes opacity-on-load {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* *LOADER* */
 .loader-stage {
   width: 100%;
@@ -141,6 +150,7 @@ form #message-area-about {
   display: flex;
   justify-content: center;
   padding-top: 45px;
+  animation: opacity-on-load 2s;
 }
 .loader {
   transform: rotateZ(45deg);
@@ -215,23 +225,14 @@ form #message-area-about {
   }
 }
 
-/* @keyframes opacity-on-load {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
-@keyframes slide-up {
+/* @keyframes slide-up {
   from {
     line-height: 400%;
   }
   to {
     line-height: 150%;
   }
-}
+} */
 
 @media screen and (min-width: 664px) {
   #personal-image {
