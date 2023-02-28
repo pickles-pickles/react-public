@@ -164,7 +164,7 @@ form #message-area-about {
   animation: 1s spin linear infinite;
 }
 .loader:after {
-  color: #ff3d00;
+  color: #007bff;
   transform: rotateY(70deg);
   animation-delay: 0.4s;
 }
