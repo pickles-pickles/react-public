@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Form from './Form'
 import ImageHome from '../assets/laptop.jpg'
-import PlaceholderImageHome from '../assets/laptop-mobile.jpg'
+import PlaceholderImageHome from '../assets/laptop-mobile-min.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Home = () => {
