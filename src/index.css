@@ -81,8 +81,35 @@ form #message-area-about {
 
 .navbar .nav-link {
   color: grey !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+@keyframes scale-up-nav-link {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
+}
+@keyframes scale-down-nav-link {
+  from {
+    scale: 1.2;
+  }
+  to {
+    scale: 1;
+  }
+}
+.navbar .nav-link:hover {
+  color: #007bff;
+  animation: scale-up-nav-link forwards 0.5s;
+}
+
+.navbar .nav-link:not(:hover) {
+  animation: scale-down-nav-link 0.25s;
+}
 /* .slide-up {
   animation: slide-up 2s;
 }
