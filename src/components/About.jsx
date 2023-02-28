@@ -1,23 +1,27 @@
 //A brief summary and resumé
 import React from 'react'
-import imageAbout from '../assets/standing-pocket.jpg'
-import imageAboutMobile from '../assets/standing-pocket-mobile.jpg'
+/* import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ImageAbout from '../assets/standing-pocket.jpg'
+import PlaceholderImageAbout from '../assets/standing-pocket-mobile.jpg' */
 
 const About = () => {
   return (
     <div className='container'>
-      <div className='row mt-3'>
+      {/* <div className='row mt-3'>
         <div
           className='col-lg-6 offset-lg-3
                 col-md-8 offset-md-2
                 text-center'
         >
-          <picture>
-            <source media='(max-width: 664px )' srcset={imageAboutMobile} />
-          </picture>
-          <img id='about-image' src={imageAbout} alt='Me' />
+          <LazyLoadImage
+            src={ImageAbout}
+            placeholdersrc={PlaceholderImageAbout}
+            alt='Image Alt'
+            id='about-image'
+            effect='blur'
+          />
         </div>
-      </div>
+      </div> */}
       <div className='slide-up'>
         <div className='row text'>
           <p>
