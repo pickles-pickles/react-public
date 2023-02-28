@@ -79,6 +79,9 @@ form #message-area-about {
   justify-content: space-between !important;
 }
 
+.nav-link-selected .nav-link-text {
+  border-bottom: 4px solid #007bff;
+}
 .navbar .nav-link {
   color: grey !important;
   display: flex;
@@ -105,6 +108,10 @@ form #message-area-about {
 .navbar .nav-link:hover {
   color: #007bff;
   animation: scale-up-nav-link forwards 0.5s;
+}
+
+.navbar .nav-link:hover > span {
+  color: #007bff;
 }
 
 .navbar .nav-link:not(:hover) {
