@@ -1,4 +1,6 @@
 import React from 'react'
+import projectsList from '../helpers/projectsList'
+import PortfolioEntryCard from './PortfolioEntryCard'
 
 const Portfolio = () => {
   return (
@@ -11,55 +13,16 @@ const Portfolio = () => {
         Netlify.
       </p>
       <p>Some apps include:</p>
-      <div className='slide-up'>
-        <p className='text'>
-          {' '}
-          <a
-            href='https://e-magazi.netlify.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            A demo e-shop
-          </a>
-        </p>
-        <p className='text'>
-          <a
-            href='https://vermillion-weather.netlify.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            A Weather app connected to two API
-          </a>
-        </p>
-        <p className='text'>
-          <a
-            href='https://trello-clone-1234.netlify.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            A trello clone still in process
-          </a>
-        </p>
-        <p className='text'>
-          <a
-            href='https://pickles-pickles.github.io/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            A funny gh-pages site{' '}
-          </a>
-        </p>
-        <p className='text'>
-          <a
-            href='https://github.com/pickles-pickles/recipes/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            A full-stack app with vanilla Javascript, Python with Flask and
-            mySQL{' '}
-          </a>
-        </p>
-      </div>
+      {projectsList.map(project => (
+        <PortfolioEntryCard
+          title={project.title}
+          link={project.link}
+          stack={project.stack}
+          details={project.details}
+          key={project.title}
+          imgSrc={project.imgSrc}
+        />
+      ))}
     </div>
   )
 }
