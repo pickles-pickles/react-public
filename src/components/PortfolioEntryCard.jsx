@@ -30,7 +30,7 @@ const PortfolioEntryCard = ({ title, link, stack, details, imgSrc }) => {
 
           <div>{details}</div>
         </div>
-        <div className='col-sm-12 col-lg-3'>
+        <div className='col-sm-12 col-lg-3 portfolio-site-card'>
           <img
             src={imgSrc}
             alt='part of site screenshot'

@@ -89,6 +89,15 @@ form #message-area-about {
   align-items: center;
 }
 
+@keyframes scale-up-portfolio-site-image {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 3;
+  }
+}
+
 @keyframes scale-up-nav-link {
   from {
     scale: 1;
@@ -311,5 +320,10 @@ form #message-area-about {
     width: 350px;
     height: 470px;
     border-radius: 50%;
+  }
+
+  .portfolio-site-card:hover {
+    animation: scale-up-portfolio-site-image forwards 2s;
+    z-index: 10;
   }
 }
