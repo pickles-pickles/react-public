@@ -21,13 +21,6 @@ const projectsList = [
     imgSrc: 'assets/sites/trello.png'
   },
   {
-    title: 'A funny gh-pages site using bootstrap utilities',
-    link: 'https://pickles-pickles.github.io/',
-    details: '',
-    stack: [{ title: 'JS', color: 'black', bgColor: 'yellow' }],
-    imgSrc: 'assets/sites/trello.png'
-  },
-  {
     title:
       'A full-stack app with vanilla Javascript, Python with Flask and mySQL',
     link: 'https://github.com/pickles-pickles/recipes/',
@@ -37,7 +30,7 @@ const projectsList = [
       { title: 'Flask', color: 'white', bgColor: 'black' },
       { title: 'mySQL', color: '#DA9022', bgColor: '#005C83' }
     ],
-    imgSrc: 'assets/sites/trello.png'
+    imgSrc: 'assets/sites/uml-diagram.png'
   }
 ]
 
