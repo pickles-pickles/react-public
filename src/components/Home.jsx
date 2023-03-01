@@ -14,7 +14,7 @@ const Home = () => {
                 col-md-8 offset-md-2
                   col-lg-6 offset-lg-0
                   order-lg-last
-                  text-center'
+                  text-center slide-right-to-left-4'
         >
           <LazyLoadImage
             src={ImageHome}
@@ -24,19 +24,21 @@ const Home = () => {
             effect='blur'
           />
         </div>
-        <div className='col-sm-12 text-center col-lg-6  slide-up'>
-          <h1 id='title'>I am Christos Georgakopoulos</h1>
-          <h2 id='subtitle' className=''>
+        <div className='col-sm-12 text-center col-lg-6'>
+          <h1 id='title' className='slide-right-to-left'>
+            I am Christos Georgakopoulos
+          </h1>
+          <h2 id='subtitle' className='slide-left-to-right'>
             Passionate mid-level React developer
           </h2>
-          <h2 id='subtitle-smaller' className=''>
+          <h2 id='subtitle-smaller' className='slide-right-to-left-2'>
             Msc in Sotware Enginnering for Web and Mobile Applications
           </h2>
-          <h2 id='subtitle-small' className=''>
+          <h2 id='subtitle-small' className='slide-left-to-right-2'>
             Open to opportunities
           </h2>
 
-          <p className='text'>
+          <p className='text slide-right-to-left-3'>
             I love front-end development, as my work is very close to the final
             user. You can learn more
             <Link to='/about'>
@@ -44,7 +46,9 @@ const Home = () => {
             </Link>{' '}
             or send me a message.
           </p>
-          <Form />
+          <div className='slide-right-to-left-4'>
+            <Form />
+          </div>
         </div>
       </div>
     </div>

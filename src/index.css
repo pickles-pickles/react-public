@@ -117,17 +117,33 @@ form #message-area-about {
 .navbar .nav-link:not(:hover) {
   animation: scale-down-nav-link 0.25s;
 }
-/* .slide-up {
-  animation: slide-up 2s;
+.slide-right-to-left {
+  animation: rightToLeft 1s;
 }
 
-.slide-up-25 {
-  animation: slide-up 2.5s;
+.slide-left-to-right {
+  animation: leftToRight 1.25s;
 }
 
-.slide-up-30 {
-  animation: slide-up 3s;
-} */
+.slide-right-to-left-2 {
+  animation: rightToLeft 1.5s;
+}
+
+.slide-left-to-right-2 {
+  animation: leftToRight 1.75s;
+}
+
+.slide-right-to-left-3 {
+  animation: rightToLeft 2s;
+}
+
+.slide-left-to-right-3 {
+  animation: leftToRight 2s;
+}
+
+.slide-right-to-left-4 {
+  animation: rightToLeft 2.25s;
+}
 
 .text {
   font-size: 120%;
@@ -259,6 +275,23 @@ form #message-area-about {
   }
 }
 
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
 /* @keyframes slide-up {
   from {
     line-height: 400%;
