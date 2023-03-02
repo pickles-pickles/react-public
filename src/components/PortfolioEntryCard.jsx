@@ -27,8 +27,11 @@ const PortfolioEntryCard = ({ title, link, stack, details, imgSrc }) => {
               </h4>
             ))}
           </div>
-
-          <div>{details}</div>
+          <hr />
+          <div>
+            <h3 className='ml-2'>Details</h3>
+            <p className='text ml-2 mt-2 mr-2'>{details}</p>
+          </div>
         </div>
         <div className='col-sm-12 col-lg-3 portfolio-site-card'>
           <img

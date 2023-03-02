@@ -48,7 +48,8 @@ const projectsList = [
   {
     title: 'A trello clone still in process',
     link: 'https://trello-clone-1234.netlify.app/',
-    details: '',
+    details:
+      "The purpose of this app was to create a pixel-perfect copy of the trello site. Trello is a task-handling app, like Jira, if you are familiar with that, that was made using Bootstrap. When building this app, I became familiar with the Bootstrap utilities and with the configuration of private routes, using react-router-dom. As my intention was to replicate the UI and not perform the actual functionalities of Trello, I kept the app's state minimal and used React Context for state management, instead of Redux(Redux is ideal for handling complex state)",
     stack: [ReactPill, BootstrapPill, ReactRouterDomPill, ReactContextPill],
     imgSrc: 'assets/sites/trello.png'
   },
