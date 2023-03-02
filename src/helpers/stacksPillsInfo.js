@@ -33,3 +33,30 @@ export const firebasePill = {
   bgColor: '#EDAC39'
 }
 export const SASSPill = { title: 'SASS', color: '#F2F2F2', bgColor: '#C26191' }
+
+export const ReactPlotlyPill = {
+  title: 'plotly.js',
+  color: '#0F94F2',
+  bgColor: '#29F5FF'
+}
+export const ReactDatepickerPill = {
+  title: 'datepicker.js',
+  color: '#FCFCFC',
+  bgColor: '#a8a8a8'
+}
+
+export const OpenWeatherMapPill = {
+  title: 'OpenWeatherMap',
+  color: '#E0533C',
+  bgColor: '#F2F2F2'
+}
+
+export const JSPill = { title: 'JS', color: 'black', bgColor: 'yellow' }
+
+export const FlaskPill = { title: 'Flask', color: 'white', bgColor: 'black' }
+
+export const MySQLPillPill = {
+  title: 'mySQL',
+  color: '#DA9022',
+  bgColor: '#005C83'
+}

@@ -1,8 +1,14 @@
 import {
   BootstrapPill,
   firebasePill,
+  FlaskPill,
+  JSPill,
+  MySQLPillPill,
+  OpenWeatherMapPill,
   ReactContextPill,
+  ReactDatepickerPill,
   ReactPill,
+  ReactPlotlyPill,
   ReactRouterDomPill,
   ReduxPill,
   SASSPill,
@@ -29,7 +35,14 @@ const projectsList = [
     title: ' A Weather app connected to two API',
     link: 'https://vermillion-weather.netlify.app/',
     details: '',
-    stack: [{ title: 'React', color: '#282C34', bgColor: '#61DAFB' }],
+    stack: [
+      ReactPill,
+      ReduxPill,
+      ReactRouterDomPill,
+      ReactPlotlyPill,
+      ReactDatepickerPill,
+      OpenWeatherMapPill
+    ],
     imgSrc: 'assets/sites/weatherForecast.png'
   },
   {
@@ -44,11 +57,7 @@ const projectsList = [
       'A full-stack app with vanilla Javascript, Python with Flask and mySQL',
     link: 'https://github.com/pickles-pickles/recipes/',
     details: '',
-    stack: [
-      { title: 'JS', color: 'black', bgColor: 'yellow' },
-      { title: 'Flask', color: 'white', bgColor: 'black' },
-      { title: 'mySQL', color: '#DA9022', bgColor: '#005C83' }
-    ],
+    stack: [JSPill, FlaskPill, MySQLPillPill],
     imgSrc: 'assets/sites/uml-diagram.png'
   }
 ]
