@@ -202,6 +202,12 @@ form #message-area-about {
   }
 }
 
+.projects-container .card:nth-child(even) {
+  animation: rightToLeft 1.75s;
+}
+.projects-container .card:nth-child(odd) {
+  animation: leftToRight 1.75s;
+}
 /* *LOADER* */
 .loader-stage {
   width: 100%;

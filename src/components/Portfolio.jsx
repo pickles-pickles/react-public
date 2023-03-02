@@ -5,9 +5,9 @@ import PortfolioEntryCard from './PortfolioEntryCard'
 const Portfolio = () => {
   return (
     <div className='container'>
-      <h1>Portfolio</h1>
+      <h1 className='.slide-right-to-left'>Portfolio</h1>
 
-      <p className='text'>
+      <p className='text slide-left-to-right'>
         Here are some of my sideprojects. They are <b>live sites</b>, React apps
         I deployed to{' '}
         <a href='https://www.netlify.com/' target='_blank' rel='noreferrer'>
@@ -24,17 +24,20 @@ const Portfolio = () => {
         </a>{' '}
         to take a look on the code.
       </p>
-      <p className='text'>Some apps include:</p>
-      {projectsList.map(project => (
-        <PortfolioEntryCard
-          title={project.title}
-          link={project.link}
-          stack={project.stack}
-          details={project.details}
-          key={project.title}
-          imgSrc={project.imgSrc}
-        />
-      ))}
+      <p className='text slide-right-to-left-2'>Some apps include:</p>
+      <div className='projects-container'>
+        {' '}
+        {projectsList.map(project => (
+          <PortfolioEntryCard
+            title={project.title}
+            link={project.link}
+            stack={project.stack}
+            details={project.details}
+            key={project.title}
+            imgSrc={project.imgSrc}
+          />
+        ))}
+      </div>
     </div>
   )
 }
