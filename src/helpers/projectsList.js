@@ -1,9 +1,28 @@
+import {
+  BootstrapPill,
+  firebasePill,
+  ReactContextPill,
+  ReactPill,
+  ReactRouterDomPill,
+  ReduxPill,
+  SASSPill,
+  TSPill
+} from './stacksPillsInfo'
+
 const projectsList = [
   {
     title: 'A demo e-shop',
     link: 'https://e-magazi.netlify.app/',
     details: '',
-    stack: [{ title: 'React', color: '#282C34', bgColor: '#61DAFB' }],
+    stack: [
+      ReactPill,
+      TSPill,
+      ReduxPill,
+      SASSPill,
+      BootstrapPill,
+      ReactRouterDomPill,
+      firebasePill
+    ],
     imgSrc: 'assets/sites/eshop.png'
   },
   {
@@ -17,7 +36,7 @@ const projectsList = [
     title: 'A trello clone still in process',
     link: 'https://trello-clone-1234.netlify.app/',
     details: '',
-    stack: [{ title: 'React', color: '#282C34', bgColor: '#61DAFB' }],
+    stack: [ReactPill, BootstrapPill, ReactRouterDomPill, ReactContextPill],
     imgSrc: 'assets/sites/trello.png'
   },
   {
