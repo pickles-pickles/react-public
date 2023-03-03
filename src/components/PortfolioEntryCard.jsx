@@ -14,7 +14,12 @@ const PortfolioEntryCard = ({
         <div className='col-sm-12 col-lg-9'>
           <div className='card-header'>
             <h5 className='card-title'>
-              <a href={link} target='_blank' rel='noreferrer'>
+              <a
+                href={link}
+                target='_blank'
+                rel='noreferrer'
+                className='site-description'
+              >
                 {title}
               </a>
             </h5>
@@ -42,13 +47,13 @@ const PortfolioEntryCard = ({
           </div>
           <hr />
           <div>
-            <h3 className='ml-2'>{description}</h3>
+            <h3 className='ml-2 site-description'>{description}</h3>
             <p className='text ml-2 mt-2 mr-2'></p>
           </div>
           <hr />
           <div>
             <h4 className='ml-2'>Details</h4>
-            <p className='text ml-2 mt-2 mr-2'>{details}</p>
+            <p className='text ml-2 mt-2 mr-2 site-details'>{details}</p>
           </div>
         </div>
         <div className='col-sm-12 col-lg-3 portfolio-site-card'>

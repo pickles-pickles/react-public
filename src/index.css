@@ -89,6 +89,11 @@ form #message-area-about {
   align-items: center;
 }
 
+.site-description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 @keyframes scale-up-portfolio-site-image {
   from {
     scale: 1;
