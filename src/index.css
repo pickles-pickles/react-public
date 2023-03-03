@@ -99,7 +99,7 @@ form #message-area-about {
     scale: 1;
   }
   to {
-    scale: 3;
+    scale: 2;
   }
 }
 
@@ -160,7 +160,7 @@ form #message-area-about {
 }
 
 .text {
-  font-size: 120%;
+  font-size: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }

@@ -47,12 +47,12 @@ const PortfolioEntryCard = ({
           </div>
           <hr />
           <div>
-            <h3 className='ml-2 site-description'>{description}</h3>
+            <h4 className='ml-2 site-description'>{description}</h4>
             <p className='text ml-2 mt-2 mr-2'></p>
           </div>
           <hr />
           <div>
-            <h4 className='ml-2'>Details</h4>
+            <h5 className='ml-2'>Details</h5>
             <p className='text ml-2 mt-2 mr-2 site-details'>{details}</p>
           </div>
         </div>
@@ -61,7 +61,7 @@ const PortfolioEntryCard = ({
             src={imgSrc}
             alt='part of site screenshot'
             width={'100%'}
-            height={'100%'}
+            height={'auto'}
           />
         </div>
       </div>
