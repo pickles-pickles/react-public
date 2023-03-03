@@ -32,6 +32,7 @@ const Portfolio = () => {
             title={project.title}
             link={project.link}
             stack={project.stack}
+            description={project.description}
             details={project.details}
             key={project.title}
             imgSrc={project.imgSrc}

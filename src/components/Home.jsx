@@ -32,7 +32,7 @@ const Home = () => {
             Passionate mid-level React developer
           </h2>
           <h2 id='subtitle-smaller' className='slide-right-to-left-2'>
-            Msc in Sotware Enginnering for Web and Mobile Applications
+            Msc in Sotware Engineering for Web and Mobile Applications
           </h2>
           <h2 id='subtitle-small' className='slide-left-to-right-2'>
             Open to opportunities

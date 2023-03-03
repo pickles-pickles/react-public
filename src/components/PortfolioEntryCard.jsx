@@ -1,6 +1,13 @@
 import React from 'react'
 
-const PortfolioEntryCard = ({ title, link, stack, details, imgSrc }) => {
+const PortfolioEntryCard = ({
+  title,
+  link,
+  stack,
+  description,
+  details,
+  imgSrc
+}) => {
   return (
     <div className='card mt-2 mb-2'>
       <div className='row'>
@@ -29,7 +36,12 @@ const PortfolioEntryCard = ({ title, link, stack, details, imgSrc }) => {
           </div>
           <hr />
           <div>
-            <h3 className='ml-2'>Details</h3>
+            <h3 className='ml-2'>{description}</h3>
+            <p className='text ml-2 mt-2 mr-2'></p>
+          </div>
+          <hr />
+          <div>
+            <h4 className='ml-2'>Details</h4>
             <p className='text ml-2 mt-2 mr-2'>{details}</p>
           </div>
         </div>
