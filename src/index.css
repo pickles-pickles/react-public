@@ -213,6 +213,11 @@ form #message-area-about {
 .projects-container .card:nth-child(odd) {
   animation: leftToRight 1.75s;
 }
+
+.side-container {
+  width: 20%;
+  min-width: 20%;
+}
 /* *LOADER* */
 .loader-stage {
   width: 100%;
@@ -341,6 +346,6 @@ form #message-area-about {
 
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 65% !important;
+    max-width: 60% !important;
   }
 }

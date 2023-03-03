@@ -60,3 +60,15 @@ export const MySQLPillPill = {
   color: '#DA9022',
   bgColor: '#005C83'
 }
+
+export const StackPillsList = [
+  ReactPill,
+  ReduxPill,
+  JSPill,
+  TSPill,
+  BootstrapPill,
+  ReactRouterDomPill,
+  SASSPill,
+  FlaskPill,
+  MySQLPillPill
+]

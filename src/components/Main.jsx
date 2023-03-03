@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import NavigationBar from './NavigationBar'
 import Footer from './Footer'
 import Home from './Home'
@@ -9,17 +9,15 @@ import Contact from './Contact'
 
 const Main = () => {
   return (
-    <div className='animation-box'>
-      <Router>
-        <NavigationBar />
-        <Switch>
-          <Route exact path='/' component={Home}></Route>
-          <Route path='/portfolio' component={Portfolio}></Route>
-          <Route path='/about' component={About}></Route>
-          <Route path='/contact' component={Contact}></Route>
-        </Switch>
-        <Footer />
-      </Router>
+    <div className='container-fluid'>
+      <NavigationBar />
+      <Switch>
+        <Route exact path='/' component={Home}></Route>
+        <Route path='/portfolio' component={Portfolio}></Route>
+        <Route path='/about' component={About}></Route>
+        <Route path='/contact' component={Contact}></Route>
+      </Switch>
+      <Footer />
     </div>
   )
 }

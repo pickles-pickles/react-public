@@ -1,28 +1,14 @@
 //A brief summary and resumé
 import React from 'react'
-/* import { LazyLoadImage } from 'react-lazy-load-image-component'
-import ImageAbout from '../assets/standing-pocket.jpg'
-import PlaceholderImageAbout from '../assets/standing-pocket-mobile.jpg' */
+import StackCard from './StackCard'
 
 const About = () => {
   return (
-    <div className='container'>
-      {/* <div className='row mt-3'>
-        <div
-          className='col-lg-6 offset-lg-3
-                col-md-8 offset-md-2
-                text-center'
-        >
-          <LazyLoadImage
-            src={ImageAbout}
-            placeholdersrc={PlaceholderImageAbout}
-            alt='Image Alt'
-            id='about-image'
-            effect='blur'
-          />
-        </div>
-      </div> */}
-      <div className='slide-up'>
+    <div className='d-flex flex-row'>
+      <div className='side-container'>
+        <StackCard />
+      </div>
+      <div className='container'>
         <div className='row text'>
           <p>
             I am Christos Georgakopoulos, 29 yo. I am a passionate front-end
@@ -85,6 +71,7 @@ const About = () => {
         </div>
         <p className='row text'>If you believe that I have more </p>
       </div>
+      <div className='side-container'></div>
     </div>
   )
 }

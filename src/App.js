@@ -1,5 +1,6 @@
 import './App.css'
 import React from 'react'
+import { HashRouter as Router } from 'react-router-dom'
 
 const Main = React.lazy(async () => {
   const [moduleExports] = await Promise.all([
@@ -12,15 +13,17 @@ const Main = React.lazy(async () => {
 function App () {
   return (
     <div className='App'>
-      <React.Suspense
-        fallback={
-          <div className='loader-stage'>
-            <span className='loader'></span>
-          </div>
-        }
-      >
-        <Main />
-      </React.Suspense>
+      <Router>
+        <React.Suspense
+          fallback={
+            <div className='loader-stage'>
+              <span className='loader'></span>
+            </div>
+          }
+        >
+          <Main />
+        </React.Suspense>
+      </Router>
     </div>
   )
 }
