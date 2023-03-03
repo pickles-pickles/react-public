@@ -333,3 +333,9 @@ form #message-area-about {
     z-index: 10;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 65% !important;
+  }
+}
