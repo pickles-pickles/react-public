@@ -19,7 +19,13 @@ const PortfolioEntryCard = ({
               </a>
             </h5>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'wrap'
+            }}
+          >
             {stack.map((item, idx) => (
               <h4 key={idx}>
                 <span
