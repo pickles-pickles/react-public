@@ -61,6 +61,24 @@ export const MySQLPillPill = {
   bgColor: '#005C83'
 }
 
+export const GitPill = {
+  title: 'git/ github',
+  color: '#F2F2F2',
+  bgColor: '#E44D30'
+}
+
+export const MUIPill = {
+  title: 'Material UI',
+  color: '#F2F2F2',
+  bgColor: '#0079F2'
+}
+
+export const TailwindPill = {
+  title: 'Tailwind',
+  color: '#F2F2F2',
+  bgColor: '#01B7D6'
+}
+
 export const StackPillsList = [
   ReactPill,
   ReduxPill,
@@ -70,5 +88,8 @@ export const StackPillsList = [
   ReactRouterDomPill,
   SASSPill,
   FlaskPill,
-  MySQLPillPill
+  MySQLPillPill,
+  GitPill,
+  MUIPill,
+  TailwindPill
 ]
