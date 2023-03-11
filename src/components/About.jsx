@@ -42,7 +42,7 @@ const About = () => {
               <li>React.js</li>
               <li>Redux</li>
               <li>Typescript</li>
-              <li>git</li>
+              <li>git/ github</li>
             </ul>
           </div>
         </div>
