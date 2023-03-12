@@ -1,6 +1,7 @@
 //A brief summary and resumé
 import React from 'react'
-import StackCard from '../components/cards/StackCard'
+import FutureGoalsCard from '../components/cards/About/FutureGoalsCard'
+import StackCard from '../components/cards/About/StackCard'
 
 const About = () => {
   return (
@@ -70,7 +71,9 @@ const About = () => {
           </div>
           <p className='text'>If you believe that I have more </p>
         </div>
-        <div className='side-container'></div>
+        <div className='side-container'>
+          <FutureGoalsCard />
+        </div>
       </div>
     </>
   )
