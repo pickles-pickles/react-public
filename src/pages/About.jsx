@@ -4,12 +4,13 @@ import StackCard from '../components/cards/StackCard'
 
 const About = () => {
   return (
-    <div className='d-flex flex-row'>
-      <div className='side-container'>
-        <StackCard />
-      </div>
-      <div className='container'>
-        <div className='row text'>
+    <>
+      <div className='d-flex flex-column flex-lg-row'>
+        <div className='side-container'>
+          <StackCard />
+        </div>
+        <div className='container'>
+          {' '}
           <p>
             I am Christos Georgakopoulos, 29 yo. I am a passionate front-end
             developer that currently is expanding his online presence. My{' '}
@@ -21,58 +22,57 @@ const About = () => {
             English. In my spare time, I delve into full-stack, data analysis
             with RapidMiner and strolling around quantum computation ideas.
           </p>
-        </div>
-        <p className='text'>
-          During the pandemic, -almost 3 years before my Msc studies and my
-          first job as a web dev- I decided to make a career change and become
-          front-end development. I attended webinars and built projects with
-          emphasis in the following areas:
-        </p>
-        <div className='row text'>
-          <div className='col-6'>
-            <ul>
-              <li>SEO</li>
-              <li>HTML, CSS(SCSS &LESS), Javascript</li>
-              <li>jQuery</li>
-              <li>Bootstrap, Tailwind, Material UI</li>
-            </ul>
-          </div>
-          <div className='col-6'>
-            <ul>
-              <li>React.js</li>
-              <li>Redux</li>
-              <li>Typescript</li>
-              <li>git/ github</li>
-            </ul>
-          </div>
-        </div>
-        <p className='row text'>
-          I have used Jira in a professional environment.
-        </p>
-        <div className='row text'>
-          <p>
-            I, also, just graduated from{' '}
-            <a
-              href='https://www.lastingdynamics.com/academy/'
-              rel='noopener noreferrer'
-              target='_blank'
-            >
-              {' '}
-              Lasting Dynamics Academy{' '}
-            </a>
+          <p className='text'>
+            During the pandemic, -almost 3 years before my Msc studies and my
+            first job as a web dev- I decided to make a career change and become
+            front-end development. I attended webinars and built projects with
+            emphasis in the following areas:
           </p>
+          <div className='row text'>
+            <div className='col-6'>
+              <ul>
+                <li>SEO</li>
+                <li>HTML, CSS(SCSS &LESS), Javascript</li>
+                <li>jQuery</li>
+                <li>Bootstrap, Tailwind, Material UI</li>
+              </ul>
+            </div>
+            <div className='col-6'>
+              <ul>
+                <li>React.js</li>
+                <li>Redux</li>
+                <li>Typescript</li>
+                <li>git/ github</li>
+              </ul>
+            </div>
+          </div>
+          <p className='text'>
+            I have used Jira in a professional environment.
+          </p>
+          <div className='text'>
+            <p>
+              I, also, just graduated from{' '}
+              <a
+                href='https://www.lastingdynamics.com/academy/'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                {' '}
+                Lasting Dynamics Academy{' '}
+              </a>
+            </p>
+          </div>
+          <div className='text'>
+            You can view or download my CV from &nbsp;
+            <a href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'>
+              my Google Drive{' '}
+            </a>
+          </div>
+          <p className='text'>If you believe that I have more </p>
         </div>
-        <div className='row text'>
-          You can view or download my CV from &nbsp;{' '}
-          <a href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'>
-            {' '}
-            my Google Drive{' '}
-          </a>
-        </div>
-        <p className='row text'>If you believe that I have more </p>
+        <div className='side-container'></div>
       </div>
-      <div className='side-container'></div>
-    </div>
+    </>
   )
 }
 

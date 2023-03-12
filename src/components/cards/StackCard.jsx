@@ -3,9 +3,7 @@ import { StackPillsList } from '../../helpers/stacksPillsInfo'
 const StackCard = () => {
   return (
     <div className='card'>
-      <div className='card-header'>
-        <div className='site-description'>My stack</div>
-      </div>
+      <div className='card-header site-description'>My stack</div>
       <div
         class='card-body'
         style={{
@@ -17,7 +15,7 @@ const StackCard = () => {
         {StackPillsList.map(item => (
           <h4 key={item.title}>
             <span
-              className='badge badge-lg ml-2 mr-2 mt-2'
+              className='badge badge-lg mr-1 mt-2'
               style={{
                 color: item.color,
                 background: item.bgColor

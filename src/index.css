@@ -46,6 +46,41 @@ form #message-area-about {
   width: 80%;
 }
 
+/* *ID* */
+#about-image {
+  width: 250px;
+  height: 330px;
+  border-radius: 50%;
+}
+
+#personal-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+#subtitle {
+  font-size: 200%;
+}
+
+#subtitle-small {
+  font-size: 170%;
+}
+
+#subtitle-smaller {
+  font-size: 150%;
+  color: #6b6b6b;
+}
+
+#success-button {
+  width: 100%;
+}
+
+#title {
+  font-size: 280%;
+}
+
+/* *CLASSES* */
 .icon {
   margin-right: 20px;
 }
@@ -94,31 +129,6 @@ form #message-area-about {
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@keyframes scale-up-portfolio-site-image {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 2;
-  }
-}
-
-@keyframes scale-up-nav-link {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 1.2;
-  }
-}
-@keyframes scale-down-nav-link {
-  from {
-    scale: 1.2;
-  }
-  to {
-    scale: 1;
-  }
-}
 .navbar .nav-link:hover {
   color: #007bff;
   animation: scale-up-nav-link forwards 0.5s;
@@ -161,41 +171,12 @@ form #message-area-about {
 
 .text {
   font-size: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px; */
 }
 
-#about-image {
-  width: 250px;
-  height: 330px;
-  border-radius: 50%;
-}
-
-#personal-image {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-#subtitle {
-  font-size: 200%;
-}
-
-#subtitle-small {
-  font-size: 170%;
-}
-
-#subtitle-smaller {
-  font-size: 150%;
-  color: #6b6b6b;
-}
-
-#success-button {
-  width: 100%;
-}
-
-#title {
-  font-size: 280%;
+.side-container .card .card-body {
+  padding: 1.1rem;
 }
 
 @keyframes opacity-on-load {
@@ -215,8 +196,9 @@ form #message-area-about {
 }
 
 .side-container {
-  width: 20%;
-  min-width: 20%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* *LOADER* */
 .loader-stage {
@@ -254,6 +236,7 @@ form #message-area-about {
   animation-delay: 0.4s;
 }
 
+/* * KEYFRAMES * */
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotateZ(0deg);
@@ -326,6 +309,35 @@ form #message-area-about {
   }
 } */
 
+@keyframes scale-up-portfolio-site-image {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 2;
+  }
+}
+
+@keyframes scale-up-nav-link {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
+}
+@keyframes scale-down-nav-link {
+  from {
+    scale: 1.2;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+/* * MEDIA * */
+
+/* medium screens */
 @media screen and (min-width: 664px) {
   #personal-image {
     width: 350px;
@@ -343,9 +355,15 @@ form #message-area-about {
     z-index: 10;
   }
 }
-
+/* large screens */
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 60% !important;
+    max-width: 75% !important;
+  }
+  .side-container {
+    width: 12.5%;
+    min-width: 12.5%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

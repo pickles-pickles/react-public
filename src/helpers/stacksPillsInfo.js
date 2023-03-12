@@ -23,7 +23,7 @@ export const BootstrapPill = {
   bgColor: '#5B25AE'
 }
 export const ReactRouterDomPill = {
-  title: 'React-router-dom',
+  title: 'React-router',
   color: '#F2F2F2',
   bgColor: '#CE4148'
 }
