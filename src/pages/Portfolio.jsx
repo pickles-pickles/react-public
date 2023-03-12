@@ -1,6 +1,6 @@
 import React from 'react'
 import projectsList from '../helpers/projectsList'
-import PortfolioEntryCard from './PortfolioEntryCard'
+import PortfolioEntryCard from '../components/cards/PortfolioEntryCard'
 
 const Portfolio = () => {
   return (

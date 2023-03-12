@@ -4,7 +4,7 @@ import { HashRouter as Router } from 'react-router-dom'
 
 const Main = React.lazy(async () => {
   const [moduleExports] = await Promise.all([
-    import('./components/Main'),
+    import('./pages/Main'),
     new Promise(resolve => setTimeout(resolve, 1000))
   ])
   return moduleExports

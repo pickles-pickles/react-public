@@ -1,4 +1,4 @@
-import { StackPillsList } from '../helpers/stacksPillsInfo'
+import { StackPillsList } from '../../helpers/stacksPillsInfo'
 
 const StackCard = () => {
   return (

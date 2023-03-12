@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Form from './Form'
+import Form from '../components/Form'
 import ImageHome from '../assets/laptop.jpg'
 import PlaceholderImageHome from '../assets/laptop-mobile-min.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'

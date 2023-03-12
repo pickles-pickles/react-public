@@ -1,6 +1,6 @@
 //A brief summary and resumé
 import React from 'react'
-import StackCard from './StackCard'
+import StackCard from '../components/cards/StackCard'
 
 const About = () => {
   return (
