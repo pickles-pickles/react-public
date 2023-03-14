@@ -1,75 +1,49 @@
 //A brief summary and resumé
 import React from 'react'
+import AboutCard from '../components/cards/About/AboutCard'
+import CurrentOccupationCard from '../components/cards/About/CurrentOccupationCard'
+import EducationCard from '../components/cards/About/EducationCard'
 import FutureGoalsCard from '../components/cards/About/FutureGoalsCard'
 import StackCard from '../components/cards/About/StackCard'
+import ThesisCard from '../components/cards/About/ThesisCard'
+import HobbiesCard from '../components/cards/HobbiesCard'
 
 const About = () => {
   return (
     <>
       <div className='d-flex flex-column flex-lg-row'>
-        <div className='side-container'>
+        <div className='side-container mb-3 mb-lg-0'>
           <StackCard />
         </div>
         <div className='container'>
-          {' '}
-          <p>
-            I am Christos Georgakopoulos, 29 yo. I am a passionate front-end
-            developer that currently is expanding his online presence. My{' '}
-            <b>Msc</b> in on <b>Software Engineering for Web and Mobile Apps</b>
-            , University of Thessaly. My thesis topic is:{' '}
-            <b>'Investigation and Implementation of Quntum Algorithms'</b>. My
-            Bsc is on <b>Materials Science & Enginnering</b>, University of
-            Crete, Greek is my mother tongue and I have a Proficiency degree in
-            English. In my spare time, I delve into full-stack, data analysis
-            with RapidMiner and strolling around quantum computation ideas.
-          </p>
-          <p className='text'>
-            During the pandemic, -almost 3 years before my Msc studies and my
-            first job as a web dev- I decided to make a career change and become
-            front-end development. I attended webinars and built projects with
-            emphasis in the following areas:
-          </p>
-          <div className='row text'>
-            <div className='col-6'>
-              <ul>
-                <li>SEO</li>
-                <li>HTML, CSS(SCSS &LESS), Javascript</li>
-                <li>jQuery</li>
-                <li>Bootstrap, Tailwind, Material UI</li>
-              </ul>
+          <div className='row'>
+            <div className='col-12 col-md-4 order-md-2'>
+              <div className='mb-3'>
+                <CurrentOccupationCard />
+              </div>
+              <div className='mb-3'>
+                <EducationCard />
+              </div>
+              <div className='d-none d-md-block'>
+                <HobbiesCard />
+              </div>
             </div>
-            <div className='col-6'>
-              <ul>
-                <li>React.js</li>
-                <li>Redux</li>
-                <li>Typescript</li>
-                <li>git/ github</li>
-              </ul>
+
+            <div className='col-12 col-md-8 order-md-1'>
+              <div>
+                <div className='mb-3'>
+                  <AboutCard />
+                </div>
+                <div className='mb-3'>
+                  <ThesisCard />
+                </div>
+
+                <div className='d-block d-md-none mb-3'>
+                  <HobbiesCard />
+                </div>
+              </div>
             </div>
           </div>
-          <p className='text'>
-            I have used Jira in a professional environment.
-          </p>
-          <div className='text'>
-            <p>
-              I, also, just graduated from{' '}
-              <a
-                href='https://www.lastingdynamics.com/academy/'
-                rel='noopener noreferrer'
-                target='_blank'
-              >
-                {' '}
-                Lasting Dynamics Academy{' '}
-              </a>
-            </p>
-          </div>
-          <div className='text'>
-            You can view or download my CV from &nbsp;
-            <a href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'>
-              my Google Drive{' '}
-            </a>
-          </div>
-          <p className='text'>If you believe that I have more </p>
         </div>
         <div className='side-container'>
           <FutureGoalsCard />
