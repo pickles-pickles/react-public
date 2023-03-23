@@ -81,6 +81,16 @@ form #message-area-about {
 }
 
 /* *CLASSES* */
+
+.curved-div svg {
+  display: block;
+}
+.curved-div {
+  background-image: url('./assets/wave.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .icon {
   margin-right: 20px;
 }

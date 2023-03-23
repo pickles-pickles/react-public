@@ -9,7 +9,7 @@ import Contact from './Contact'
 
 const Main = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid curved-div'>
       <NavigationBar />
       <Switch>
         <Route exact path='/' component={Home}></Route>
