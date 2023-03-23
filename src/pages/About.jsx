@@ -10,14 +10,20 @@ import HobbiesCard from '../components/cards/HobbiesCard'
 import useIsInViewport from '../helpers/customHooks/useIsInViewport'
 
 const About = () => {
-  const ref1 = useRef(null)
-  const ref2 = useRef(null)
+  const ref1 = useRef(null),
+    ref2 = useRef(null),
+    ref3 = useRef(null),
+    ref4 = useRef(null),
+    ref5 = useRef(null),
+    ref6 = useRef(null)
 
-  const isInViewport1 = useIsInViewport(ref1)
-  console.log('isInViewport1: ', isInViewport1)
+  const isInViewport1 = useIsInViewport(ref1),
+    isInViewport2 = useIsInViewport(ref2),
+    isInViewport3 = useIsInViewport(ref3),
+    isInViewport4 = useIsInViewport(ref4),
+    isInViewport5 = useIsInViewport(ref5),
+    isInViewport6 = useIsInViewport(ref6)
 
-  const isInViewport2 = useIsInViewport(ref2)
-  console.log('isInViewport2: ', isInViewport2)
   return (
     <>
       <div className='d-flex flex-column flex-lg-row'>
@@ -35,24 +41,49 @@ const About = () => {
               >
                 <CurrentOccupationCard />
               </div>
-              <div className='mb-3'>
+              <div
+                ref={ref2}
+                className={`mb-3 ${
+                  isInViewport2 ? 'slide-right-to-left-4' : null
+                }`}
+              >
                 <EducationCard />
               </div>
-              <div className='d-none d-md-block'>
+              <div
+                ref={ref3}
+                className={` d-none d-md-block mb-3 ${
+                  isInViewport3 ? 'slide-right-to-left-4' : null
+                }`}
+              >
                 <HobbiesCard />
               </div>
             </div>
 
             <div className='col-12 col-md-8 order-md-1'>
               <div>
-                <div ref={ref2} className='mb-3'>
+                <div
+                  ref={ref4}
+                  className={`mb-3 ${
+                    isInViewport4 ? 'slide-right-to-left-4' : null
+                  }`}
+                >
                   <AboutCard />
                 </div>
-                <div className='mb-3'>
+                <div
+                  ref={ref5}
+                  className={`mb-3 ${
+                    isInViewport5 ? 'slide-right-to-left-4' : null
+                  }`}
+                >
                   <ThesisCard />
                 </div>
 
-                <div className='d-block d-md-none mb-3'>
+                <div
+                  ref={ref6}
+                  className={`d-block d-md-none mb-3 mb-3 ${
+                    isInViewport6 ? 'slide-right-to-left-4' : null
+                  }`}
+                >
                   <HobbiesCard />
                 </div>
               </div>
