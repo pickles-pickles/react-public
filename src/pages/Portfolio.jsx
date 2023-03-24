@@ -25,7 +25,7 @@ const Portfolio = () => {
         to take a look on the code.
       </p>
       <p className='text'>Some apps include:</p>
-      <div className='projects-container'>
+      <div className='portfolio-projects-container'>
         {' '}
         {projectsList.map(project => (
           <PortfolioEntryCard

@@ -142,52 +142,6 @@ form #message-area-about {
 .navbar .nav-link:not(:hover) {
   animation: scale-down-nav-link 0.25s;
 }
-.slide-right-to-left {
-  animation: rightToLeftMedium 1s;
-}
-
-.slide-left-to-right {
-  animation: leftToRight 1.25s;
-}
-
-.slide-right-to-left-2 {
-  animation: rightToLeftMedium 1.5s;
-}
-
-.slide-left-to-right-2 {
-  animation: leftToRight 1.75s;
-}
-
-.slide-right-to-left-3 {
-  animation: rightToLeftMedium 2s;
-}
-
-.slide-left-to-right-3 {
-  /* not used so far */
-  animation: leftToRight 2s;
-}
-
-.slide-right-to-left-4 {
-  animation: rightToLeftMedium 2.25s;
-}
-
-/* medium */
-
-.slide-right-to-left-medium {
-  animation: rightToLeftMedium 1s;
-}
-
-.slide-right-to-left-medium-2 {
-  animation: rightToLeftMedium 1.5s;
-}
-
-.slide-right-to-left-medium-3 {
-  animation: rightToLeftMedium 2s;
-}
-
-.slide-right-to-left-medium-4 {
-  animation: rightToLeftMedium 2.25s;
-}
 
 .text {
   font-size: 100%;
@@ -206,13 +160,6 @@ form #message-area-about {
   to {
     opacity: 1;
   }
-}
-
-.projects-container .card:nth-child(even) {
-  animation: rightToLeft 1.25s;
-}
-.projects-container .card:nth-child(odd) {
-  animation: leftToRight 1.25s;
 }
 
 .side-container {
@@ -356,6 +303,44 @@ form #message-area-about {
   }
 }
 
+.slide-right-to-left-home {
+  animation: rightToLeftMedium 0.25s forwards;
+}
+
+.slide-left-to-right-home {
+  animation: leftToRight 0.5s forwards;
+}
+
+.slide-right-to-left-home-2 {
+  animation: rightToLeftMedium 0.75s forwards;
+}
+
+.slide-left-to-right-home-2 {
+  animation: leftToRight 1s forwards;
+}
+
+.slide-right-to-left-home-3 {
+  animation: rightToLeftMedium 1.15s forwards;
+}
+
+.slide-right-to-left-home-4 {
+  animation: rightToLeftMedium 1.25s forwards;
+}
+
+/* medium */
+
+.slide-right-to-left-about-2 {
+  animation: rightToLeft 0.5s forwards;
+  animation-iteration-count: 1;
+}
+
+.portfolio-projects-container .card:nth-child(even) {
+  animation: rightToLeft 0.75s forwards;
+}
+.portfolio-projects-container .card:nth-child(odd) {
+  animation: leftToRight 0.75s forwards;
+}
+
 /* * MEDIA * */
 
 /* medium screens */
@@ -396,5 +381,44 @@ form #message-area-about {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+
+  /* animations */
+
+  .slide-right-to-left-home {
+    animation: rightToLeftMedium 1s forwards;
+  }
+
+  .slide-left-to-right-home {
+    animation: leftToRight 1.25s forwards;
+  }
+
+  .slide-right-to-left-home-2 {
+    animation: rightToLeftMedium 1.5s forwards;
+  }
+
+  .slide-left-to-right-home-2 {
+    animation: leftToRight 1.75s forwards;
+  }
+
+  .slide-right-to-left-home-3 {
+    animation: rightToLeftMedium 2s forwards;
+  }
+
+  .slide-right-to-left-home-4 {
+    animation: rightToLeftMedium 2.25s forwards;
+  }
+
+  /* medium */
+
+  .slide-right-to-left-about-2 {
+    animation: rightToLeftMedium 1.5s forwards;
+  }
+
+  .portfolio-projects-container .card:nth-child(even) {
+    animation: rightToLeft 1.25s forwards;
+  }
+  .portfolio-projects-container .card:nth-child(odd) {
+    animation: leftToRight 1.25s forwards;
   }
 }
