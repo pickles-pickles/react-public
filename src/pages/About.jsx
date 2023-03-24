@@ -36,7 +36,7 @@ const About = () => {
               <div
                 ref={ref1}
                 className={`mb-3 ${
-                  isInViewport1 ? 'slide-right-to-left-4' : null
+                  isInViewport1 ? 'slide-right-to-left-medium-2' : null
                 }`}
               >
                 <CurrentOccupationCard />
@@ -44,7 +44,7 @@ const About = () => {
               <div
                 ref={ref2}
                 className={`mb-3 ${
-                  isInViewport2 ? 'slide-right-to-left-4' : null
+                  isInViewport2 ? 'slide-right-to-left-medium-2' : null
                 }`}
               >
                 <EducationCard />
@@ -52,7 +52,7 @@ const About = () => {
               <div
                 ref={ref3}
                 className={` d-none d-md-block mb-3 ${
-                  isInViewport3 ? 'slide-right-to-left-4' : null
+                  isInViewport3 ? 'slide-right-to-left-medium-2' : null
                 }`}
               >
                 <HobbiesCard />
@@ -64,7 +64,7 @@ const About = () => {
                 <div
                   ref={ref4}
                   className={`mb-3 ${
-                    isInViewport4 ? 'slide-right-to-left-4' : null
+                    isInViewport4 ? 'slide-right-to-left-medium-2' : null
                   }`}
                 >
                   <AboutCard />
@@ -72,7 +72,7 @@ const About = () => {
                 <div
                   ref={ref5}
                   className={`mb-3 ${
-                    isInViewport5 ? 'slide-right-to-left-4' : null
+                    isInViewport5 ? 'slide-right-to-left-medium-2' : null
                   }`}
                 >
                   <ThesisCard />
@@ -81,7 +81,7 @@ const About = () => {
                 <div
                   ref={ref6}
                   className={`d-block d-md-none mb-3 mb-3 ${
-                    isInViewport6 ? 'slide-right-to-left-4' : null
+                    isInViewport6 ? 'slide-right-to-left-medium-2' : null
                   }`}
                 >
                   <HobbiesCard />

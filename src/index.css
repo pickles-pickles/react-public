@@ -18,7 +18,7 @@ footer hr {
 
 footer p {
   font-size: 120%;
-  color: darkgrey;
+  color: rgb(67, 68, 69);
 }
 
 form {
@@ -152,7 +152,7 @@ form #message-area-about {
   animation: scale-down-nav-link 0.25s;
 }
 .slide-right-to-left {
-  animation: rightToLeft 1s;
+  animation: rightToLeftMedium 1s;
 }
 
 .slide-left-to-right {
@@ -160,7 +160,7 @@ form #message-area-about {
 }
 
 .slide-right-to-left-2 {
-  animation: rightToLeft 1.5s;
+  animation: rightToLeftMedium 1.5s;
 }
 
 .slide-left-to-right-2 {
@@ -168,15 +168,34 @@ form #message-area-about {
 }
 
 .slide-right-to-left-3 {
-  animation: rightToLeft 2s;
+  animation: rightToLeftMedium 2s;
 }
 
 .slide-left-to-right-3 {
+  /* not used so far */
   animation: leftToRight 2s;
 }
 
 .slide-right-to-left-4 {
-  animation: rightToLeft 2.25s;
+  animation: rightToLeftMedium 2.25s;
+}
+
+/* medium */
+
+.slide-right-to-left-medium {
+  animation: rightToLeftMedium 1s;
+}
+
+.slide-right-to-left-medium-2 {
+  animation: rightToLeftMedium 1.5s;
+}
+
+.slide-right-to-left-medium-3 {
+  animation: rightToLeftMedium 2s;
+}
+
+.slide-right-to-left-medium-4 {
+  animation: rightToLeftMedium 2.25s;
 }
 
 .text {
@@ -199,10 +218,10 @@ form #message-area-about {
 }
 
 .projects-container .card:nth-child(even) {
-  animation: rightToLeft 1.75s;
+  animation: rightToLeft 1.25s;
 }
 .projects-container .card:nth-child(odd) {
-  animation: leftToRight 1.75s;
+  animation: leftToRight 1.25s;
 }
 
 .side-container {
@@ -295,7 +314,7 @@ form #message-area-about {
 
 @keyframes rightToLeft {
   0% {
-    transform: translateX(100%);
+    transform: translateX(15%);
   }
   100% {
     transform: translateX(0px);
@@ -304,20 +323,21 @@ form #message-area-about {
 
 @keyframes leftToRight {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-15%);
   }
   100% {
     transform: translateX(0px);
   }
 }
-/* @keyframes slide-up {
-  from {
-    line-height: 400%;
+
+@keyframes rightToLeftMedium {
+  0% {
+    transform: translateX(25%);
   }
-  to {
-    line-height: 150%;
+  100% {
+    transform: translateX(0px);
   }
-} */
+}
 
 @keyframes scale-up-portfolio-site-image {
   from {
