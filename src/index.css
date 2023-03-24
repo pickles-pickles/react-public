@@ -82,15 +82,6 @@ form #message-area-about {
 
 /* *CLASSES* */
 
-.curved-div svg {
-  display: block;
-}
-.curved-div {
-  background-image: url('./assets/wave.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 .icon {
   margin-right: 20px;
 }
@@ -395,5 +386,15 @@ form #message-area-about {
     min-width: 12.5%;
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .curved-div svg {
+    display: block;
+  }
+  .curved-div {
+    background-image: url('./assets/wave.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
