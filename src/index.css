@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #000;
 }
 
 code {
@@ -522,6 +524,11 @@ form #message-area-about {
 .dark textarea,
 .dark textarea:focus {
   background-color: #d2d2d2;
+}
+
+.dark textarea:focus {
+  outline: 1px solid #87cefa;
+  box-shadow: 2px solid #87cefa;
 }
 
 .dark a:hover {
