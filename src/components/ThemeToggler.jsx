@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Toggle from 'react-toggle'
-import ThemeDetector from './ThemeDetector'
 
 const ThemeToggler = () => {
   const [isLight, setIsLight] = useState(
@@ -27,6 +26,15 @@ const ThemeToggler = () => {
     console.log(window.matchMedia('(prefers-color-scheme: light)'))
   }, [isLight])
 
+  useEffect(() => {
+    if (
+      window.matchMedia('(prefers-color-scheme: dark)').matches &&
+      window.innerWidth < 768 //apply only to medium and smaller screens
+    ) {
+      setIsAutoDark(true)
+    }
+  }, [])
+
   return (
     <>
       <Toggle
@@ -40,7 +48,6 @@ const ThemeToggler = () => {
         aria-label='Dark mode toggle'
       />
       <p>{isLight.toString()}</p>
-      <ThemeDetector setIsAutoDark={setIsAutoDark} />
     </>
   )
 }
