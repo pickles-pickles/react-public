@@ -443,6 +443,7 @@ form #message-area-about {
   opacity: 1;
   transition: opacity 0.25s ease;
 }
+
 .react-toggle-track-check {
   position: absolute;
   width: 10px;
@@ -469,4 +470,28 @@ form #message-area-about {
 
 .react-toggle--checked .react-toggle-thumb {
   border-color: gray;
+}
+
+/* * DARK THEME * */
+
+.dark footer p {
+  font-size: 120%;
+  color: rgb(220, 223, 227);
+}
+
+.dark #subtitle-smaller {
+  font-size: 150%;
+  color: #d2d2d2;
+}
+
+.dark .loader {
+  color: #fff;
+}
+
+.dark .portfolio-projects-container .card {
+  border: 1px solid#d2d2d2;
+}
+
+.dark .portfolio-projects-container .card-header {
+  border-bottom: 1px solid#d2d2d2;
 }

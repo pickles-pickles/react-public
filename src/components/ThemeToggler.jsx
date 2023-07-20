@@ -13,7 +13,13 @@ const ThemeToggler = () => {
   }, [isLight])
 
   useEffect(() => {
-    console.log(isLight)
+    if (window.matchMedia('(prefers-color-scheme: light)')) {
+      console.log('light')
+      setIsLight(true)
+    } else if (window.matchMedia('(prefers-color-scheme: dark)')) {
+      console.log('dark')
+      setIsLight(false)
+    }
   }, [])
 
   return (
