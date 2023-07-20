@@ -125,6 +125,13 @@ form #message-area-about {
   align-items: center;
 }
 
+.nav-link {
+  color: grey !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .site-description {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -421,4 +428,45 @@ form #message-area-about {
   .portfolio-projects-container .card:nth-child(odd) {
     animation: leftToRight 1.25s forwards;
   }
+}
+
+.react-toggle-track-x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 7px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  right: 15px;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+.react-toggle-track-check {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 7px;
+  bottom: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  left: 4px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.react-toggle--checked .react-toggle-track {
+  background: white;
+  border: 1px solid gray;
+}
+
+.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+  background: white;
+  opacity: 0.5;
+}
+
+.react-toggle--checked .react-toggle-thumb {
+  border-color: gray;
 }

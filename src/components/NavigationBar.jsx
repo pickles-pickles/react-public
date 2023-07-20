@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav, NavItem } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
+import ThemeToggler from './ThemeToggler'
 
 const NavigationBar = () => {
   return (
@@ -46,6 +47,9 @@ const NavigationBar = () => {
             <span className='fa fa-telegram  mr-1'></span>
             <span className='nav-link-text'>Contact</span>
           </NavLink>
+        </NavItem>
+        <NavItem className='navlink'>
+          <ThemeToggler />
         </NavItem>
       </Nav>
     </div>

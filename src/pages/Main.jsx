@@ -10,7 +10,10 @@ import Contact from './Contact'
 const Main = () => {
   return (
     <div className='container-fluid curved-div'>
-      <NavigationBar />
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <NavigationBar />
+      </div>
+
       <Switch>
         <Route exact path='/' component={Home}></Route>
         <Route path='/portfolio' component={Portfolio}></Route>
