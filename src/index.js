@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-toggle/style.css'
 import './index.css'
-//import './index-dark.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 

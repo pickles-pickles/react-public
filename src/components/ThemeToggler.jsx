@@ -26,7 +26,7 @@ const ThemeToggler = () => {
   }, [])
 
   return (
-    <>
+    <div>
       <Toggle
         checked={isLight}
         onChange={({ target }) => {
@@ -36,8 +36,18 @@ const ThemeToggler = () => {
         disabled={isAutoDark}
         aria-label='Dark mode toggle'
       />
-      <p>{isAutoDark && 'dark theme set by device'}</p>
-    </>
+      {isAutoDark && (
+        <p
+          style={{
+            border: '1px dashed #d2d2d2',
+            padding: '2px',
+            borderRadius: '2px'
+          }}
+        >
+          {'🌙 set by device'}
+        </p>
+      )}
+    </div>
   )
 }
 

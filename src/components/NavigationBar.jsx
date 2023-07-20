@@ -48,7 +48,7 @@ const NavigationBar = () => {
             <span className='nav-link-text'>Contact</span>
           </NavLink>
         </NavItem>
-        <NavItem className='navlink'>
+        <NavItem className='nav-item'>
           <ThemeToggler />
         </NavItem>
       </Nav>
