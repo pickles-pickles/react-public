@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 import { HashRouter as Router } from 'react-router-dom'
+import ThemeDetector from './components/ThemeDetector'
 
 const Main = React.lazy(async () => {
   const [moduleExports] = await Promise.all([
@@ -22,6 +23,7 @@ function App () {
           }
         >
           <Main />
+          <ThemeDetector />
         </React.Suspense>
       </Router>
     </div>
