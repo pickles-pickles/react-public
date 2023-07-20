@@ -7,6 +7,13 @@ const ThemeToggler = () => {
   )
 
   useEffect(() => {
+    window
+      .matchMedia('(prefers-color-scheme: light)')
+      .addEventListener('change', event => {
+        const colorScheme = event.matches ? 'light' : 'dark'
+        console.log(colorScheme) // "dark" or "light"
+      })
+
     if (isLight) {
       document.body.classList.remove('dark')
       console.log(document.body.classList)
@@ -14,6 +21,7 @@ const ThemeToggler = () => {
       document.body.classList.add('dark')
       console.log(document.body.classList)
     }
+    console.log(window.matchMedia('(prefers-color-scheme: light)'))
   }, [isLight])
 
   return (
@@ -27,6 +35,7 @@ const ThemeToggler = () => {
         icons={{ checked: '🔆', unchecked: '🌙' }}
         aria-label='Dark mode toggle'
       />
+      <p>{isLight.toString()}</p>
     </>
   )
 }
