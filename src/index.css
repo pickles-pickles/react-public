@@ -474,24 +474,56 @@ form #message-area-about {
 
 /* * DARK THEME * */
 
+.dark {
+  background: #353535;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p {
+  color: #d2d2d2;
+}
+
 .dark footer p {
   font-size: 120%;
   color: rgb(220, 223, 227);
-}
-
-.dark #subtitle-smaller {
-  font-size: 150%;
-  color: #d2d2d2;
 }
 
 .dark .loader {
   color: #fff;
 }
 
-.dark .portfolio-projects-container .card {
+.dark .card {
   border: 1px solid#d2d2d2;
+  background-color: #353535;
 }
 
-.dark .portfolio-projects-container .card-header {
+.dark .card-header {
   border-bottom: 1px solid#d2d2d2;
+  color: #d2d2d2;
+}
+
+.dark .nav-link-selected .nav-link-text {
+  border-bottom: 4px solid #87cefa;
+}
+
+.dark .navbar .nav-link:hover > span {
+  color: #87cefa;
+}
+
+.dark .loader:after {
+  color: #87cefa;
+}
+
+.dark textarea,
+.dark textarea:focus {
+  background-color: #d2d2d2;
+}
+
+.dark a:hover {
+  color: #87cefa;
 }
