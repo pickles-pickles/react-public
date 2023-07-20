@@ -1,8 +1,12 @@
+:root {
+  color-scheme: only dark;
+}
 @media (prefers-color-scheme: dark) {
   body {
     background: rgb(51, 116, 182);
     color: #334;
     outline: 5px dotted #000;
+    color-scheme: only dark;
   }
 
   .dark {
