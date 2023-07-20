@@ -36,7 +36,7 @@ const ThemeToggler = () => {
         disabled={isAutoDark}
         aria-label='Dark mode toggle'
       />
-      <p>{isLight.toString()}</p>
+      <p>{isAutoDark && 'dark theme set by device'}</p>
     </>
   )
 }
