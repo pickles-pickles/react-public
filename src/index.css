@@ -513,6 +513,10 @@ form #message-area-about {
   color: #d2d2d2;
 }
 
+.dark .card hr {
+  background-color: #d2d2d2;
+}
+
 .dark .nav-link-selected .nav-link-text {
   border-bottom: 4px solid #87cefa;
 }

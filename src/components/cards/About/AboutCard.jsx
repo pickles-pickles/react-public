@@ -3,7 +3,7 @@ const AboutCard = () => {
     <div className='card'>
       <div className='card-header site-description'>About Me</div>
       <div
-        class='card-body'
+        className='card-body'
         style={{
           display: 'flex',
           flexDirection: 'row',
@@ -43,10 +43,12 @@ const AboutCard = () => {
           innovative, impactful web experiences.
         </p>
         <div className='text'>
-          You can view or download my CV from &nbsp;
-          <a href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'>
-            my Google Drive{' '}
-          </a>
+          <p>
+            You can view or download my CV from&nbsp;
+            <a href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'>
+              my Google Drive{' '}
+            </a>
+          </p>
         </div>
       </div>
     </div>

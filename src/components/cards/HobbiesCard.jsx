@@ -3,7 +3,7 @@ const HobbiesCard = () => {
     <div className='card'>
       <div className='card-header site-description'>Hobbies</div>
       <div
-        class='card-body'
+        className='card-body'
         style={{
           display: 'flex',
           flexDirection: 'row',

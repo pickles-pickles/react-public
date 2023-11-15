@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 const PortfolioEntryCard = ({
   title,
@@ -53,7 +53,18 @@ const PortfolioEntryCard = ({
           <hr />
           <div>
             <h5 className='ml-2'>Details</h5>
-            <p className='text ml-2 mt-2 mr-2 site-details'>{details}</p>
+            <p className='text ml-2 mt-2 mr-2 site-details'>
+              {details.split('\n').map(
+                (
+                  i //line break when the string contains \n characters
+                ) => (
+                  <Fragment key={i}>
+                    {i} <br />
+                    <br />
+                  </Fragment>
+                )
+              )}
+            </p>
           </div>
         </div>
         <div className='col-sm-12 col-lg-3 portfolio-site-card'>

@@ -3,7 +3,7 @@ const EducationCard = () => {
     <div className='card'>
       <div className='card-header site-description'>Education</div>
       <div
-        class='card-body'
+        className='card-body'
         style={{
           display: 'flex',
           flexDirection: 'row',

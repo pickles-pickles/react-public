@@ -5,7 +5,7 @@ const StackCard = () => {
     <div className='card'>
       <div className='card-header site-description'>My stack</div>
       <div
-        class='card-body'
+        className='card-body'
         style={{
           display: 'flex',
           flexDirection: 'row',

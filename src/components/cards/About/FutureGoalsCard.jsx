@@ -3,7 +3,7 @@ const FutureGoalsCard = () => {
     <div className='card'>
       <div className='card-header site-description'>Future Goals</div>
       <div
-        class='card-body'
+        className='card-body'
         style={{
           display: 'flex',
           flexDirection: 'row',
