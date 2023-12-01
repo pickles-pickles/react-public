@@ -3,6 +3,7 @@ import {
   firebasePill,
   FlaskPill,
   JSPill,
+  MUIPill,
   MySQLPillPill,
   OpenWeatherMapPill,
   ReactContextPill,
@@ -16,6 +17,16 @@ import {
 } from './stacksPillsInfo'
 
 const projectsList = [
+  {
+    title: 'Github API consumer with extensive README',
+    link: 'https://konn-test.netlify.app/',
+    description:
+      'This app consumes the github API to display info about github profiles in a simple, but fancy layout.',
+    details:
+      'This demo app is the most recent I made. It is an example of how I would organize my code for a real-world project and what desing patterns I would follow. \nDetails can be found in the README.md file, where I explain the thought process in detail.',
+    stack: [ReactPill, TSPill, ReduxPill, ReactRouterDomPill, MUIPill],
+    imgSrc: 'assets/sites/konn-test.png'
+  },
   {
     title: 'A demo e-shop',
     link: 'https://e-magazi.netlify.app/',
@@ -56,7 +67,7 @@ const projectsList = [
     link: 'https://trello-clone-1234.netlify.app/',
     description: 'A pixel-perfect replication of a popular site',
     details:
-      "This app a pixel-perfect copy of the trello site. \nTrello is a task-handling app, that was made using Bootstrap. When building this app, I became familiar with the Bootstrap utilities and with the configuration of private routes, using react-router-dom. \nCreating a pixel-perfect replica of Trello's interface was an exhilarating endeavor that truly put my front-end development skills to the test. Every detail, from the layout structure to the card functionalities, demanded an intense level of precision and understanding of design principles. I immersed myself in the intricacies of HTML, CSS, and JavaScript, meticulously crafting code that mirrored Trello's appearance while ensuring seamless interactivity.",
+      "This app a pixel-perfect copy of the trello site. \nTrello is a task-handling app, that was made using Bootstrap. When building this app, I became familiar with the Bootstrap utilities and with the configuration of private routes, using react-router-dom. \nCreating a pixel-perfect replica of Trello's interface was an exhilarating endeavor that truly put my front-end development skills to the test. Every detail, from the layout structure to the card functionalities, demanded an intense level of precision and understanding of design principles. I immersed myself in the intricacies of HTML, CSS, and JavaScript, meticulously crafting code that mirrored Trello's appearance while ensuring seamless interactivity. \nThis app would be perfect to be refactored as a Nextjs app, as it is very suitable for a hybrid(part SSR, part CSR) setup",
     stack: [ReactPill, BootstrapPill, ReactRouterDomPill, ReactContextPill],
     imgSrc: 'assets/sites/trello.png'
   },
