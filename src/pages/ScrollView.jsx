@@ -5,8 +5,8 @@ import HomeTest from '../components/HomeTest'
 const ScrollView = () => {
   return (
     <>
-     {/*  <Home /> */}
-      <HomeTest/>
+      <Home />
+      {/* <HomeTest/> */}
     </>
   )
 }

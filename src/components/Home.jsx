@@ -5,10 +5,33 @@ import ImageHome from '../assets/laptop.jpg'
 import PlaceholderImageHome from '../assets/laptop-mobile-min.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import MaskImage from './MaskImage'
+import styled from 'styled-components'
+
+const ContainerDiv = styled.div`
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    background-image: url('../../src/assets/Black-Hole-Disc.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+`
+
 
 const Home = () => {
   return (
-    <div className='container'>
+    <ContainerDiv>
+    <div className='containerd'>
       <div className='row mt-3'>
         <div
           className='col-sm-12
@@ -40,13 +63,13 @@ const Home = () => {
         </div>
         <div className='col-sm-12 text-center col-lg-6'>
           <h1 id='title' className='slide-right-to-left-home mt-4 mt-lg-0'>
-            I am Christos Georgakopoulos
+            I am Chris
           </h1>
           <h2 id='subtitle' className='slide-left-to-right-home'>
             React developer
           </h2>
           <h2 id='subtitle-smaller' className='slide-right-to-left-home-2'>
-            MSc in Software Engineering for Web and Mobile Applications
+            MSc in Software Engineering
           </h2>
           {/* <h2 id='subtitle-small' className='slide-left-to-right-home-2'>
             Open to opportunities
@@ -68,6 +91,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </ContainerDiv>
   )
 }
 

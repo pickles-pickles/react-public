@@ -46,6 +46,18 @@
   --purple-200: hsl(266, 100%, 85%);
   --purple-100: hsl(266, 100%, 95%);
 
+  --cyan-900: hsl(192, 100%, 20%);
+--cyan-800: hsl(192, 100%, 30%);
+--cyan-700: hsl(192, 100%, 40%);
+--cyan-600: hsl(192, 100%, 50%);/* Original */
+
+--cyan-500: hsl(192, 100%, 60%);
+--cyan-400: hsl(192, 100%, 70%);
+--cyan-300: hsl(192, 100%, 75%);
+--cyan-200: hsl(192, 100%, 85%);
+--cyan-100: hsl(192, 100%, 95%);
+
+
   --font-heading: 'Space Grotesk', sans-serif;
 }
 
@@ -120,17 +132,17 @@ form #message-area-about {
 }
 
 #subtitle {
-  font-size: 200%;
+  font-size: 300%;
   font-family: var(--font-heading);
 }
 
 #subtitle-small {
-  font-size: 170%;
+  font-size: 250%;
 }
 
 #subtitle-smaller {
-  font-size: 150%;
-  color: var(--lightblue-300) /* #6b6b6b */;
+  font-size: 200%;
+  color: var(--cyan-600) /* #6b6b6b */;
   margin-bottom: 2rem;
   font-family: var(--font-heading);
 }
@@ -144,7 +156,7 @@ form #message-area-about {
 }
 
 #title {
-  font-size: 280%;
+  font-size: 580%;
 }
 
 /* *CLASSES* */
