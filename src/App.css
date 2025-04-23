@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./assets/fonts/space-grotesk-font-family-1745392453-0/SpaceGrotesk-Regular-BF6a712f001.ttf')
+    format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  margin: 0;
+  padding: 0;
+  --primary-blue: hsl(216, 65%, 11%);
+  --text-white: hsl(217, 50%, 91%);
+  --secondary-lightblue: hsl(166, 100%, 70%);
+  --secondary-purple: hsl(266 100% 67.5%);
+
+  /* Primary Blue Shades (Dark to Light) */
+  --primary-blue-900: hsl(216, 65%, 5%);
+  --primary-blue-800: hsl(216, 65%, 8%);
+  --primary-blue-700: hsl(216, 65%, 11%); /* Original */
+  --primary-blue-600: hsl(216, 65%, 20%);
+  --primary-blue-500: hsl(216, 65%, 30%);
+  --primary-blue-400: hsl(216, 65%, 45%);
+  --primary-blue-300: hsl(216, 65%, 65%);
+  --primary-blue-200: hsl(216, 65%, 85%);
+  --primary-blue-100: hsl(216, 65%, 95%);
+
+  /* Secondary Light Blue Shades (Dark to Light) */
+  --lightblue-900: hsl(166, 100%, 20%);
+  --lightblue-800: hsl(166, 100%, 30%);
+  --lightblue-700: hsl(166, 100%, 40%);
+  --lightblue-600: hsl(166, 100%, 50%);
+  --lightblue-500: hsl(166, 100%, 60%);
+  --lightblue-400: hsl(166, 100%, 70%); /* Original */
+  --lightblue-300: hsl(166, 100%, 75%);
+  --lightblue-200: hsl(166, 100%, 85%);
+  --lightblue-100: hsl(166, 100%, 95%);
+
+  /* Secondary Purple Shades (Dark to Light) */
+  --purple-900: hsl(266, 100%, 15%);
+  --purple-800: hsl(266, 100%, 25%);
+  --purple-700: hsl(266, 100%, 35%);
+  --purple-600: hsl(266, 100%, 45%);
+  --purple-500: hsl(266, 100%, 55%);
+  --purple-400: hsl(266, 100%, 67.5%); /* Original */
+  --purple-300: hsl(266, 100%, 75%);
+  --purple-200: hsl(266, 100%, 85%);
+  --purple-100: hsl(266, 100%, 95%);
+
+  --font-heading: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: var(--primary-blue-700);
+  color: var(--primary-blue-100);
+}
+
+#hero {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+#hero img {
+  float: right;
+  border-radius: 50%;
+  clip-path: circle();
+  width: 50%;
+  /* display: inline-block; */
+}

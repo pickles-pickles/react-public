@@ -6,6 +6,7 @@ import Home from './Home'
 import Portfolio from './Portfolio'
 import About from './About'
 import Contact from './Contact'
+import ScrollView from './ScrollView'
 
 const Main = () => {
   return (
@@ -15,7 +16,7 @@ const Main = () => {
       </div>
 
       <Switch>
-        <Route exact path='/' component={Home}></Route>
+        <Route exact path='/' component={/* Home */ ScrollView}></Route>
         <Route path='/portfolio' component={Portfolio}></Route>
         <Route path='/about' component={About}></Route>
         <Route path='/contact' component={Contact}></Route>
