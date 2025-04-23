@@ -21,7 +21,12 @@ const ContainerDiv = styled.div`
     height: 100%;
     opacity: 0.2;
     z-index: -1;
-    background-image: url('../../src/assets/Black-Hole-Disc.jpg');
+    background-image: url('../../src/assets/Black-Hole-Disc1.jpg');
+    background-image: linear-gradient(
+      45deg,
+      var(--purple-300),
+      var(--cyan-600)
+    );
     background-size: 100%;
     background-repeat: no-repeat;
   }
