@@ -109,7 +109,13 @@ form #message-area-about {
 #personal-image {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  -webkit-mask-image: url('./assets/stamp-mask-image-removebg.png');
+  mask-image: url('./assets/stamp-mask-image-removebg.png');
+  mask-repeat: no-repeat; 
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
 }
 
 #subtitle {
@@ -415,7 +421,11 @@ form #message-area-about {
   #personal-image {
     width: 350px;
     height: 350px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+   -webkit-mask-image: url('./assets/stamp-mask-image-removebg.png');
+   mask-image: url('./assets/stamp-mask-image-removebg.png');
+   mask-repeat: no-repeat; 
+   mask-size: contain;
   }
   #about-image {
     width: 350px;

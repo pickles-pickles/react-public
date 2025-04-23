@@ -4,6 +4,7 @@ import Form from '../components/Form'
 import ImageHome from '../assets/laptop.jpg'
 import PlaceholderImageHome from '../assets/laptop-mobile-min.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import MaskImage from './MaskImage'
 
 const Home = () => {
   return (
@@ -22,7 +23,20 @@ const Home = () => {
             alt='Image Alt'
             id='personal-image'
             effect='blur'
+            wrapperProps={{
+              style: {
+                display: 'inline-block',
+                WebkitMaskImage:
+                  /* 'linear-gradient(to right, black , transparent 10%)' */MaskImage,
+                maskImage:
+                  /* 'linear-gradient(to right, black , transparent 40%)' */
+                  MaskImage,
+                maskRepeat: 'no-repeat',
+                maskSize: 'cover'
+              }
+            }}
           />
+          {/* <img src={ImageHome} /> */}
         </div>
         <div className='col-sm-12 text-center col-lg-6'>
           <h1 id='title' className='slide-right-to-left-home mt-4 mt-lg-0'>
@@ -49,6 +63,7 @@ const Home = () => {
           </p>
           <div className='slide-right-to-left-home-4'>
             <Form />
+            <MaskImage/>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ import ScrollView from './ScrollView'
 
 const Main = () => {
   return (
-    <div className='container-fluid curved-div'>
+    <div className='container-fluid curved-divq'>
       {/* <div style={{ display: 'flex', flexDirection: 'row' }}>
         <NavigationBar />
       </div> */}
