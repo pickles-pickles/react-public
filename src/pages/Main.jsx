@@ -11,9 +11,9 @@ import ScrollView from './ScrollView'
 const Main = () => {
   return (
     <div className='container-fluid curved-div'>
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      {/* <div style={{ display: 'flex', flexDirection: 'row' }}>
         <NavigationBar />
-      </div>
+      </div> */}
 
       <Switch>
         <Route exact path='/' component={/* Home */ ScrollView}></Route>

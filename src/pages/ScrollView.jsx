@@ -1,7 +1,12 @@
 import React from 'react'
+import Home from '../components/Home'
 
 const ScrollView = () => {
-  return <div>ScrollView</div>
+  return (
+    <>
+      <Home />
+    </>
+  )
 }
 
 export default ScrollView
