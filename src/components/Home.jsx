@@ -25,14 +25,14 @@ const Home = () => {
             effect='blur'
             wrapperProps={{
               style: {
-                display: 'inline-block',
+                /* display: 'inline-block',
                 WebkitMaskImage:
-                  /* 'linear-gradient(to right, black , transparent 10%)' */MaskImage,
+                  MaskImage,
                 maskImage:
-                  /* 'linear-gradient(to right, black , transparent 40%)' */
+                  
                   MaskImage,
                 maskRepeat: 'no-repeat',
-                maskSize: 'cover'
+                maskSize: 'cover' */
               }
             }}
           />
