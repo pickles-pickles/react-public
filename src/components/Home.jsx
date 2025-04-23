@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <ContainerDiv>
       <div className='containerd'>
-        <div className='row mt-3'>
+        <div className='row mt-3 mt-lg-0 pt-lg-5'>
           <div
             className='col-sm-12
                 col-md-8 offset-md-2
