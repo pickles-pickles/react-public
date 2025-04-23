@@ -32,13 +32,13 @@ const Home = () => {
             React developer
           </h2>
           <h2 id='subtitle-smaller' className='slide-right-to-left-home-2'>
-            Msc in Software Engineering for Web and Mobile Applications
+            MSc in Software Engineering for Web and Mobile Applications
           </h2>
           {/* <h2 id='subtitle-small' className='slide-left-to-right-home-2'>
             Open to opportunities
           </h2> */}
 
-          <p className='text slide-right-to-left-home-3'>
+          <p className='text slide-right-to-left-home-3' id='home-text'>
             I love front-end development, as my work is very close to the final
             user.{' '}
             {/* Learn more

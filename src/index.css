@@ -123,8 +123,13 @@ form #message-area-about {
 
 #subtitle-smaller {
   font-size: 150%;
-  color: #6b6b6b;
+  color: var(--lightblue-300) /* #6b6b6b */;
   margin-bottom: 2rem;
+  font-family: var(--font-heading);
+}
+
+#home-text {
+  font-family: var(--font-heading);
 }
 
 #success-button {
