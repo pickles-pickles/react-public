@@ -455,6 +455,7 @@ form #message-area-about {
 @media screen and (min-width: 992px) {
   .container {
     max-width: 75% !important;
+    padding-top: 2rem;
   }
   .side-container {
     width: 12.5%;
