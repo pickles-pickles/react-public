@@ -3,7 +3,7 @@ import React from 'react'
 const ExperienceCard = () => {
   return (
     <div className='experience-card glass-card'>
-      <div className='row '>
+      <div className='row my-3'>
         <div className='col-2 d-flex  justify-content-center'>
           <span
             style={{
@@ -34,7 +34,7 @@ const ExperienceCard = () => {
         </div>
       </div>
 
-      <div className='mt-5 row'>
+      <div className='row'>
         <div className=' col-2 d-flex  justify-content-center'>
           <span
             style={{
