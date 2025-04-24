@@ -170,6 +170,12 @@ form #message-area-about {
   font-family: var(--font-heading);
   font-size: 200%;
 }
+
+#experience-section h1 {
+  position: relative;
+  top: -4rem;
+  text-align: center;
+}
 /* *CLASSES* */
 
 .icon {
