@@ -291,7 +291,7 @@ form #message-area-about {
 }
 
 .glass-card {
-  width: 800px;
+  width: 60vw;
   min-height: 200px;
   padding: 20px;
   border-radius: 16px;
@@ -301,6 +301,20 @@ form #message-area-about {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
+}
+
+.vertical-hr {
+  width: 1px;
+  background-color: #999;
+  transform: translateY(calc(1.5rem + 22px));
+}
+
+#vertical-hr-1 {
+  height: 150%;
+}
+
+#vertical-hr-2 {
+  height: 75%;
 }
 
 /* *LOADER* */
