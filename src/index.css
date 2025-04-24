@@ -296,7 +296,11 @@ form #message-area-about {
   min-height: 200px;
   padding: 20px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
+  background: /* rgba(255, 255, 255, 0.1) */ linear-gradient(
+    125deg,
+    var(--primary-blue-800),
+    hsla(from var(--lightblue-900) h s l / 0.7) 80%
+  );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -325,6 +329,12 @@ form #message-area-about {
 
 .experience-card-subtitle {
   font-size: 2rem;
+  mix-blend-mode: exclusion;
+  color: #87cefa;
+  background-image: linear-gradient(to right, #87cefa, white);
+  color: transparent;
+  background-clip: text;
+
   /* color: var(--lightblue-800); */
 }
 
