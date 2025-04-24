@@ -307,15 +307,16 @@ form #message-area-about {
 .vertical-hr {
   width: 1px;
   background-color: #999;
-  transform: translateY(calc(1.5rem + 22px));
 }
 
 #vertical-hr-1 {
-  height: 150%;
+  height: 110%;
+  transform: translateY(calc(1.5rem + 28px));
 }
 
 #vertical-hr-2 {
-  height: 75%;
+  height: 65%;
+  transform: translateY(calc(1.5rem + 32px)) translateX(-4px);
 }
 
 .experience-card-title {

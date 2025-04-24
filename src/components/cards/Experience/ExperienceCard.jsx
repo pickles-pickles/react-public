@@ -7,8 +7,8 @@ const ExperienceCard = () => {
         <div className='col-2 d-flex  justify-content-center'>
           <span
             style={{
-              width: '22px',
-              height: '22px',
+              width: '28px',
+              height: '28px',
               transform: 'translateX(50%) translateY(1.25rem)'
             }}
           >
@@ -16,8 +16,8 @@ const ExperienceCard = () => {
               src='../../../../assets/raymetrics-logo.png'
               alt='raymetrics logo'
               srcset=''
-              width={22}
-              height={22}
+              width={28}
+              height={28}
               style={{
                 background: 'linear-gradient(45deg, hsl(34 100% 54%), #0157A0)'
               }}
@@ -38,17 +38,17 @@ const ExperienceCard = () => {
         <div className=' col-2 d-flex  justify-content-center'>
           <span
             style={{
-              width: '22px',
-              height: '22px',
-              transform: 'translateX(50%) translateY(1.25rem)'
+              width: '36px',
+              height: '36px',
+              transform: 'translateX(calc(50% - 4px)) translateY(1.25rem)'
             }}
           >
             <img
               src='/src/assets/aylo-logo.png'
               alt='aylo logo'
               srcset=''
-              width={22}
-              height={22}
+              width={36}
+              height={36}
             />
           </span>
           <div className='vertical-hr' id='vertical-hr-2'></div>
