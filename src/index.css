@@ -296,16 +296,17 @@ form #message-area-about {
   min-height: 200px;
   padding: 20px;
   border-radius: 16px;
-  background: /* rgba(255, 255, 255, 0.1) */ linear-gradient(
+  background: linear-gradient(
     125deg,
     var(--primary-blue-800),
-    hsla(from var(--lightblue-900) h s l / 0.7) 80%
+    hsla(from var(--lightblue-900) h s l / 0.6) 80%
   );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
+  /* mix-blend-mode: difference; */ /* $TODO: make the home screen also with mix-blend mode if i want to keep that. OR Keep this filter with 40% in back ground, instead of 80% */
 }
 
 .vertical-hr {
