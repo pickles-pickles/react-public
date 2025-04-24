@@ -171,6 +171,25 @@ form #message-area-about {
   font-size: 200%;
 }
 
+#experience-section {
+  position: absolute;
+  width: 100vw;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    background-image: url('./assets/Black-Hole-Disc.jpg');
+    /* background-image: linear-gradient(45deg, var(--purple-300), var(--cyan-600)); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
 #experience-section h1 {
   position: relative;
   top: -4rem;
@@ -270,6 +289,20 @@ form #message-area-about {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.glass-card {
+  width: 800px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
 /* *LOADER* */
 .loader-stage {
   width: 100%;

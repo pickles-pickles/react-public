@@ -9,7 +9,7 @@ const ScrollView = () => {
     <>
       <Home />
       <Experience />
-      <MaskImage />
+      {/* <MaskImage /> */}
 
       {/* <HomeTest/> */}
     </>
