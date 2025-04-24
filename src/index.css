@@ -47,16 +47,15 @@
   --purple-100: hsl(266, 100%, 95%);
 
   --cyan-900: hsl(192, 100%, 20%);
---cyan-800: hsl(192, 100%, 30%);
---cyan-700: hsl(192, 100%, 40%);
---cyan-600: hsl(192, 100%, 50%);/* Original */
+  --cyan-800: hsl(192, 100%, 30%);
+  --cyan-700: hsl(192, 100%, 40%);
+  --cyan-600: hsl(192, 100%, 50%); /* Original */
 
---cyan-500: hsl(192, 100%, 60%);
---cyan-400: hsl(192, 100%, 70%);
---cyan-300: hsl(192, 100%, 75%);
---cyan-200: hsl(192, 100%, 85%);
---cyan-100: hsl(192, 100%, 95%);
-
+  --cyan-500: hsl(192, 100%, 60%);
+  --cyan-400: hsl(192, 100%, 70%);
+  --cyan-300: hsl(192, 100%, 75%);
+  --cyan-200: hsl(192, 100%, 85%);
+  --cyan-100: hsl(192, 100%, 95%);
 
   --font-heading: 'Space Grotesk', sans-serif;
 }
@@ -123,7 +122,7 @@ form #message-area-about {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-/*   -webkit-mask-image: url('./assets/stamp-mask-image-round-ChatGPT.png');
+  /*   -webkit-mask-image: url('./assets/stamp-mask-image-round-ChatGPT.png');
   mask-image: url('./assets/stamp-mask-image-round-ChatGPT.png');
   mask-repeat: no-repeat; 
   -webkit-mask-repeat: no-repeat;
@@ -159,6 +158,18 @@ form #message-area-about {
   font-size: 580%;
 }
 
+#home-card {
+  background: var(--primary-blue-900);
+  color: var(--primary-blue-200);
+  min-width: 60%;
+  min-height: 80%;
+  padding: 2.5rem;
+  position: absolute;
+  inset: 20px;
+  border-radius: 0.25rem;
+  font-family: var(--font-heading);
+  font-size: 200%;
+}
 /* *CLASSES* */
 
 .icon {
@@ -435,7 +446,7 @@ form #message-area-about {
     width: 350px;
     height: 350px;
     /* border-radius: 50%; */
-/*    -webkit-mask-image: url('./assets/stamp-mask-image-removebg.png');
+    /*    -webkit-mask-image: url('./assets/stamp-mask-image-removebg.png');
    mask-image: url('./assets/stamp-mask-image-removebg.png');
    mask-repeat: no-repeat; 
    mask-size: contain; */

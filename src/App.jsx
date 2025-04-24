@@ -12,7 +12,7 @@ const Main = React.lazy(async () => {
 
 function App () {
   return (
-    <div className='App'>
+    <>
       <Router>
         <React.Suspense
           fallback={
@@ -24,7 +24,7 @@ function App () {
           <Main />
         </React.Suspense>
       </Router>
-    </div>
+    </>
   )
 }
 
