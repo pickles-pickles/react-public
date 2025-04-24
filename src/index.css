@@ -317,6 +317,19 @@ form #message-area-about {
   height: 75%;
 }
 
+.experience-card-title {
+  font-size: 1.5rem;
+}
+
+.experience-card-subtitle {
+  font-size: 2rem;
+  /* color: var(--lightblue-800); */
+}
+
+.experience-card-smaller-subtitle {
+  font-size: 1rem;
+}
+
 /* *LOADER* */
 .loader-stage {
   width: 100%;

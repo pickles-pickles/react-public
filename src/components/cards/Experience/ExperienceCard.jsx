@@ -4,7 +4,7 @@ const ExperienceCard = () => {
   return (
     <div className='experience-card glass-card'>
       <div className='row '>
-        <div className='col-4 d-flex  justify-content-center'>
+        <div className='col-2 d-flex  justify-content-center'>
           <span
             style={{
               width: '22px',
@@ -25,15 +25,17 @@ const ExperienceCard = () => {
           </span>
           <div className='vertical-hr' id='vertical-hr-1'></div>
         </div>
-        <div>
-          <h3>Raymetrics</h3>
-          <p>Front-end developer - Team lead of 4</p>
-          <p>12/2023 - Present</p>
+        <div className='col-10'>
+          <h3 className='experience-card-title'>Raymetrics</h3>
+          <p className='experience-card-subtitle'>
+            Front-end developer - Team lead of 4
+          </p>
+          <p className='experience-card-smaller-subtitle'>12/2023 - Present</p>
         </div>
       </div>
 
       <div className='mt-5 row'>
-        <div className=' col-4 d-flex  justify-content-center'>
+        <div className=' col-2 d-flex  justify-content-center'>
           <span
             style={{
               width: '22px',
@@ -51,10 +53,10 @@ const ExperienceCard = () => {
           </span>
           <div className='vertical-hr' id='vertical-hr-2'></div>
         </div>
-        <div className=''>
-          <h3>Aylo</h3>
-          <p>Front-end developer</p>
-          <p>04/2022 - 06/2023</p>
+        <div className='col-10'>
+          <h3 className='experience-card-title'>Aylo</h3>
+          <p className='experience-card-subtitle'>Front-end developer</p>
+          <p className='experience-card-smaller-subtitle'>04/2022 - 06/2023</p>
         </div>
       </div>
     </div>
