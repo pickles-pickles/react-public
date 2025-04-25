@@ -1,14 +1,24 @@
 // ISSModel.jsx
 import React from 'react'
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useLoader } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
-function SolarPanel ({ position, rotation }) {
+function SolarPanel ({ position, rotation, imageUrl }) {
+  const texture = useLoader(THREE.TextureLoader, imageUrl)
+  const materials = [
+    new THREE.MeshStandardMaterial({ map: texture }), // Right (long side) ✅
+    new THREE.MeshStandardMaterial({ map: texture }), // Left (long side) ✅
+    new THREE.MeshStandardMaterial({ color: 'gray' }), // Top
+    new THREE.MeshStandardMaterial({ color: 'gray' }), // Bottom
+    new THREE.MeshStandardMaterial({ color: 'gray' }), // Front
+    new THREE.MeshStandardMaterial({ color: 'gray' }) // Back
+  ]
+
   return (
     <mesh position={position} rotation={rotation}>
-      <boxGeometry args={[0.1, 4, 0.5]} />
-      <meshStandardMaterial color='gray' />
+      <boxGeometry args={[0.1, 4, 1.5]} />
+      <meshStandardMaterial color='gray' attach='material' args={materials} />
     </mesh>
   )
 }
@@ -41,8 +51,16 @@ export default function ISSModel () {
       <ISSBody />
 
       {/* Solar Panels */}
-      <SolarPanel position={[-1.5, 0, 0]} rotation={[0, Math.PI / 4, 0]} />
-      <SolarPanel position={[1.5, 0, 0]} rotation={[0, -Math.PI / 4, 0]} />
+      <SolarPanel
+        position={[-1.5, 0, 0]}
+        rotation={[0, Math.PI / 4, 0]}
+        imageUrl='/src/assets/Black-Hole-Disc.jpg'
+      />
+      <SolarPanel
+        position={[1.5, 0, 0]}
+        rotation={[0, -Math.PI / 4, 0]}
+        imageUrl='/src/assets/Black-Hole-Disc.jpg'
+      />
 
       {/* Space Modules */}
       <SpaceModule position={[-2, 0, 1]} />
