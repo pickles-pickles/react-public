@@ -75,7 +75,7 @@ function Planet ({ position, label }) {
 
 export default function SolarSystem () {
   return (
-    <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+    <Canvas camera={{ position: [0, 5, 10], fov: 50 }}>
       <ambientLight intensity={0.4} />
       <pointLight position={[0, 0, 0]} intensity={1.5} />
 
