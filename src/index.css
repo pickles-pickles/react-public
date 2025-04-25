@@ -200,7 +200,7 @@ h6 {
 }
 
 #experience-section {
-  position: absolute;
+  position: relative;
   width: 100%;
   padding-bottom: min(5%, 80px);
   &::after {
@@ -369,6 +369,13 @@ h6 {
 
 .experience-card-smaller-subtitle {
   font-size: 1rem;
+}
+
+.planet-label {
+  color: white;
+  font-size: 14px;
+  mix-blend-mode: difference;
+  pointer-events: none;
 }
 
 /* *LOADER* */
