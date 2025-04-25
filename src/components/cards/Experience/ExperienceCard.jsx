@@ -13,7 +13,7 @@ const ExperienceCard = () => {
             }}
           >
             <img
-              src='../../../../assets/raymetrics-logo.png'
+              src='/src/assets/raymetrics-logo.png'
               alt='raymetrics logo'
               srcset=''
               width={28}

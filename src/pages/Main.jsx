@@ -10,19 +10,19 @@ import ScrollView from './ScrollView'
 
 const Main = () => {
   return (
-    <div className='container-fluidr curved-divq'>
-      {/* <div style={{ display: 'flex', flexDirection: 'row' }}>
+    /* <div className='container-fluidr curved-divq'> */
+    /* <div style={{ display: 'flex', flexDirection: 'row' }}>
         <NavigationBar />
-      </div> */}
+      </div> */
 
-      <Switch>
-        <Route exact path='/' component={/* Home */ ScrollView}></Route>
-        <Route path='/portfolio' component={Portfolio}></Route>
-        <Route path='/about' component={About}></Route>
-        <Route path='/contact' component={Contact}></Route>
-      </Switch>
-      {/* <Footer /> */}
-    </div>
+    <Switch>
+      <Route exact path='/' component={/* Home */ ScrollView}></Route>
+      <Route path='/portfolio' component={Portfolio}></Route>
+      <Route path='/about' component={About}></Route>
+      <Route path='/contact' component={Contact}></Route>
+    </Switch>
+    /* <Footer /> */
+    /*  </div> */
   )
 }
 
