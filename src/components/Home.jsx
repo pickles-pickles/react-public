@@ -12,6 +12,23 @@ const ContainerDiv = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
+    &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    background-image: url('../../src/assets/Black-Hole-Disc1.jpg');
+    background-image: linear-gradient(
+      45deg,
+      var(--purple-300),
+      var(--cyan-600)
+    );
+    background-size: 100%;
+    background-repeat: no-repeat;
 `
 
 const Home = () => {
