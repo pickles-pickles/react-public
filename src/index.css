@@ -140,6 +140,32 @@ h6 {
 }
 
 /* *ID* */
+
+#home-section {
+  background-image: linear-gradient(
+    45deg,
+    hsla(from var(--purple-600) h s l / 0.3),
+    hsla(from var(--purple-400) h s l / 0.3) 5%,
+    hsla(from var(--purple-300) h s l / 0.3) 20%,
+    hsla(from var(--cyan-900) h s l / 0.5) 90%,
+    hsla(from var(--cyan-600) h s l / 0.3)
+  );
+  background-image: linear-gradient(
+    45deg,
+    hsla(from var(--purple-400) h s l / 0.2) 5%,
+    hsla(from var(--cyan-900) h s l / 0.5) 90%,
+    hsla(from var(--cyan-600) h s l / 0.2)
+  );
+  background-image: linear-gradient(
+    45deg,
+    hsla(from var(--purple-400) h s l / 0.2),
+    hsla(from var(--primary-blue-700) h s l / 0.2) 5%,
+    hsla(from var(--primary-blue-700) h s l / 0.2) 90%,
+
+    hsla(from var(--cyan-600) h s l / 0.2)
+  );
+}
+
 #about-image {
   width: 250px;
   height: 330px;

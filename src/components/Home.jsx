@@ -8,7 +8,7 @@ import MaskImage from './MaskImage'
 import styled from 'styled-components'
 import HomeCard from './cards/Home/HomeCard'
 
-const ContainerDiv = styled.div`
+const ContainerDiv = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
@@ -16,7 +16,7 @@ const ContainerDiv = styled.div`
 
 const Home = () => {
   return (
-    <ContainerDiv className='row mt-3 mt-lg-0 pt-lg-5'>
+    <ContainerDiv className='row mt-3 mt-lg-0 pt-lg-5' id='home-section'>
       <div
         className='col-sm-12
                 col-md-8 offset-md-2
