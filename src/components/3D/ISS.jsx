@@ -37,10 +37,22 @@ function ISSBody () {
 }
 
 function SpaceModule ({ position }) {
+  const texture = useLoader(THREE.TextureLoader, '/src/assets/aylo-logo.png')
+  // Make it appear twice (wrap horizontally)
+  texture.wrapS = THREE.RepeatWrapping
+  texture.wrapT = THREE.ClampToEdgeWrapping
+  texture.repeat.set(2, 1) // Repeat twice across width (longitude)
+  //texture.offset.set(0, 0)
+
   return (
     <mesh position={position}>
       <sphereGeometry args={[0.3, 32, 32]} />
-      <meshStandardMaterial color='lightblue' />
+      <meshStandardMaterial
+        color='lightblue'
+        map={texture}
+        /* transparent */
+        //side={THREE.DoubleSide} // <-- Important!
+      />
     </mesh>
   )
 }
