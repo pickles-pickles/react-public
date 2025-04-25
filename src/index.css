@@ -70,6 +70,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
   color: #000;
+
+  background-color: var(--primary-blue-700);
+  color: var(--primary-blue-100);
 }
 
 code {
@@ -77,6 +80,10 @@ code {
     monospace;
 }
 
+#root {
+  margin: 0 auto;
+  padding: 0;
+}
 footer hr {
   border-top: 5px solid black;
 }
@@ -109,6 +116,27 @@ form #message-area-about {
 
 form #message-area-about {
   width: 80%;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 /* *ID* */
@@ -173,7 +201,7 @@ form #message-area-about {
 
 #experience-section {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   padding-bottom: min(5%, 80px);
   &::after {
     content: '';

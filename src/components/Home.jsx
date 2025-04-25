@@ -12,92 +12,49 @@ const ContainerDiv = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -1;
-    background-image: url('../../src/assets/Black-Hole-Disc1.jpg');
-    background-image: linear-gradient(
-      45deg,
-      var(--purple-300),
-      var(--cyan-600)
-    );
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
 `
 
 const Home = () => {
   return (
-    <ContainerDiv>
-      {/* <div className='containerd'> */}
-      <div className='row mt-3 mt-lg-0 pt-lg-5'>
-        <div
-          className='col-sm-12
+    <ContainerDiv className='row mt-3 mt-lg-0 pt-lg-5'>
+      <div
+        className='col-sm-12
                 col-md-8 offset-md-2
                   col-lg-6 offset-lg-0
                   order-lg-last
                   text-center slide-right-to-left-home-4'
-        >
-          <LazyLoadImage
-            src={ImageHome}
-            placeholdersrc={PlaceholderImageHome}
-            alt='Image Alt'
-            id='personal-image'
-            effect='blur'
-            wrapperProps={{
-              style: {
-                /* display: 'inline-block',
-                WebkitMaskImage:
-                  MaskImage,
-                maskImage:
-                  
-                  MaskImage,
-                maskRepeat: 'no-repeat',
-                maskSize: 'cover' */
-              }
-            }}
-          />
-          {/* <img src={ImageHome} /> */}
+      >
+        <LazyLoadImage
+          src={ImageHome}
+          placeholdersrc={PlaceholderImageHome}
+          alt='Image Alt'
+          id='personal-image'
+          effect='blur'
+          wrapperProps={{
+            style: {}
+          }}
+        />
+      </div>
+      <div className='col-sm-12 text-center col-lg-6'>
+        <div className='col-lg-12'>
+          <h1 id='title' className='slide-right-to-left-home mt-4 mt-lg-0'>
+            I am Chris
+          </h1>
+          <h2 id='subtitle' className='slide-left-to-right-home'>
+            React developer
+          </h2>
+          <h2 id='subtitle-smaller' className='slide-right-to-left-home-2'>
+            MSc in Software Engineering
+          </h2>
         </div>
-        <div className='col-sm-12 text-center col-lg-6'>
-          <div className='col-lg-12'>
-            <h1 id='title' className='slide-right-to-left-home mt-4 mt-lg-0'>
-              I am Chris
-            </h1>
-            <h2 id='subtitle' className='slide-left-to-right-home'>
-              React developer
-            </h2>
-            <h2 id='subtitle-smaller' className='slide-right-to-left-home-2'>
-              MSc in Software Engineering
-            </h2>
-            {/* <h2 id='subtitle-small' className='slide-left-to-right-home-2'>
-            Open to opportunities 
-          </h2> */}
-          </div>
 
-          <div
-            className='bg-warning1 d-flex justify-content-center align-items-center position-relative'
-            style={{ minHeight: '50vh' }}
-          >
-            {/* Learn more
-            <Link to='/about'>
-              <b> about me</b>
-            </Link>{' '}
-            or send me a message. */}
-
-            <HomeCard />
-            {/*  <Form /> */}
-          </div>
+        <div
+          className='bg-warning1 d-flex justify-content-center align-items-center position-relative'
+          style={{ minHeight: '50vh' }}
+        >
+          <HomeCard />
         </div>
       </div>
-      {/* </div> */}
     </ContainerDiv>
   )
 }
