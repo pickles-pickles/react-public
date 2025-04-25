@@ -6,6 +6,10 @@ import * as THREE from 'three'
 
 function SolarPanel ({ position, rotation, imageUrl }) {
   const texture = useLoader(THREE.TextureLoader, imageUrl)
+  texture.minFilter = THREE.LinearFilter
+  texture.magFilter = THREE.LinearFilter
+  texture.anisotropy = 16 // Boosts sharpness on angles
+
   const materials = [
     new THREE.MeshStandardMaterial({ map: texture }), // Right (long side) ✅
     new THREE.MeshStandardMaterial({ map: texture }), // Left (long side) ✅
