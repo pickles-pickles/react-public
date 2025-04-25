@@ -1,6 +1,6 @@
 // ISSModel.jsx
-import React from 'react'
-import { Canvas, useLoader } from '@react-three/fiber'
+import React, { useRef } from 'react'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import * as THREE from 'three'
 
@@ -56,17 +56,19 @@ function SpaceModule ({ position }) {
     </mesh>
   )
 }
+function RotatingStation () {
+  const stationRef = useRef()
 
-export default function ISSModel () {
+  useFrame((_, delta) => {
+    if (stationRef.current) {
+      stationRef.current.rotation.y += delta * 0.05 // slow spin
+    }
+  })
+
   return (
-    <Canvas camera={{ position: [0, 5, 10], fov: 50 }}>
-      <ambientLight intensity={0.4} />
-      <pointLight position={[10, 10, 10]} intensity={1} />
-
-      {/* ISS Body (Core) */}
+    <group ref={stationRef}>
       <ISSBody />
 
-      {/* Solar Panels */}
       <SolarPanel
         position={[-1.5, 0, 0]}
         rotation={[0, Math.PI / 4, 0]}
@@ -78,11 +80,20 @@ export default function ISSModel () {
         imageUrl='/src/assets/Black-Hole-Disc.jpg'
       />
 
-      {/* Space Modules */}
       <SpaceModule position={[-2, 0, 1]} />
       <SpaceModule position={[2, 0, -1]} />
+    </group>
+  )
+}
 
-      {/* Orbit Controls */}
+export default function ISSModel () {
+  return (
+    <Canvas camera={{ position: [0, 5, 8], fov: 50 }}>
+      <ambientLight intensity={0.4} />
+      <pointLight position={[10, 10, 10]} intensity={1} />
+
+      <RotatingStation />
+
       <OrbitControls />
     </Canvas>
   )
