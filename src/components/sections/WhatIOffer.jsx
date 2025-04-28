@@ -5,7 +5,7 @@ import WhatIOfferCard from '../cards/WhatIOfferCard'
 const WhatIOffer = () => {
   return (
     <section id='what-i-offer-section'>
-      <h1>What I offer</h1>
+      <h1>WHAT I OFFER</h1>
       <div className='what-i-offer-content text-center d-flex align-items-center justify-content-center'>
         <WhatIOfferCard />
       </div>

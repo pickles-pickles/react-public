@@ -233,7 +233,7 @@ h6 {
 #experience-section {
   position: relative;
   width: 100%;
-  padding-bottom: min(5%, 80px);
+  padding-bottom: min(7%, 80px);
   &::after {
     content: '';
     position: absolute;
@@ -248,12 +248,6 @@ h6 {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-}
-
-#experience-section h1 {
-  position: relative;
-  top: -4rem;
-  text-align: center;
 }
 
 #what-i-offer-section {
@@ -276,6 +270,7 @@ h6 {
   }
 }
 
+#experience-section h1,
 #what-i-offer-section h1,
 #stack-section h1 {
   position: relative;
@@ -626,20 +621,90 @@ h6 {
 
 /* extra small screens */
 @media screen and (max-width: 574px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #experience-section h1,
+  #what-i-offer-section h1,
+  #stack-section h1 {
+    top: -1.75rem;
+  }
+  #title {
+    font-size: 250%;
+  }
+  #subtitle {
+    font-size: 200%;
+    font-family: var(--font-heading);
+  }
+
+  #subtitle-small {
+    font-size: 180%;
+  }
+
+  #subtitle-smaller {
+    font-size: 150%;
+  }
   #home-card-container {
     min-height: 25vh;
+  }
+  #home-card {
+    font-size: 120%;
+    inset: 0;
+    padding: 1.5rem;
+  }
+
+  #experience-section {
+    /*     background: radial-gradient(circle at top center, lightblue 0%, blue 100%); */
+
+    &::after {
+      background-image: url('./assets/Black-Hole-Disc-mob.jpg');
+    }
+  }
+  .glass-card {
+    width: 85vw;
+  }
+
+  .experience-card-title {
+    font-size: 1.25rem;
+  }
+
+  .experience-card-subtitle {
+    font-size: 1.85rem;
+  }
+
+  .experience-card-smaller-subtitle {
+    font-size: 0.9rem;
   }
 }
 
 /* small screens */
 @media screen and (min-width: 574px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #experience-section h1,
+  #what-i-offer-section h1,
+  #stack-section h1 {
+    font-size: 5rem;
+    top: -2.75rem;
+  }
+
   #home-card-container {
     min-height: 25vh;
+  }
+  #experience-section {
+    /*     background: radial-gradient(circle at top center, lightblue 0%, blue 100%); */
+
+    &::after {
+      background-image: url('./assets/Black-Hole-Disc-mob.jpg');
+    }
   }
 }
 
 /* medium screens */
-@media screen and (min-width: 664px) {
+@media screen and (min-width: 768px) {
   #home-card-container {
     min-height: 25vh;
   }
@@ -662,6 +727,13 @@ h6 {
   .portfolio-site-card:hover {
     animation: scale-up-portfolio-site-image forwards 2s;
     z-index: 10;
+  }
+  #experience-section {
+    /*     background: radial-gradient(circle at top center, lightblue 0%, blue 100%); */
+
+    &::after {
+      background-image: url('./assets/Black-Hole-Disc-mob.jpg');
+    }
   }
 }
 /* large screens */

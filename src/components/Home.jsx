@@ -9,7 +9,6 @@ import styled from 'styled-components'
 import HomeCard from './cards/Home/HomeCard'
 
 const ContainerDiv = styled.section`
-  width: 100%;
   height: 100vh;
   position: relative;
     &:after {
@@ -33,7 +32,10 @@ const ContainerDiv = styled.section`
 
 const Home = () => {
   return (
-    <ContainerDiv className='row mt-0 pt-4 pt-lg-5' id='home-section'>
+    <ContainerDiv
+      className='row mt-0 pt-4 pt-lg-5 pb-5 pb-md-0'
+      id='home-section'
+    >
       <div
         className='col-sm-12
                 col-md-8 offset-md-2
