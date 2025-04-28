@@ -212,6 +212,10 @@ h6 {
   font-size: 580%;
 }
 
+#home-card-container {
+  min-height: 50vh;
+}
+
 #home-card {
   background: var(--primary-blue-900);
   color: var(--primary-blue-200);
@@ -223,6 +227,7 @@ h6 {
   border-radius: 0.25rem;
   font-family: var(--font-heading);
   font-size: 200%;
+  overflow-y: hidden;
 }
 
 #experience-section {
@@ -383,6 +388,15 @@ h6 {
     var(--primary-blue-800),
     hsla(from var(--lightblue-900) h s l / 0.6) 80%
   );
+
+  /* * fallback if 'from' is not supported */
+  background: linear-gradient(
+    125deg,
+    var(--primary-blue-800),
+    hsla(166, 100%, 20%, 0.6) 80%
+  );
+  /*  */
+
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -416,6 +430,8 @@ h6 {
   color: #87cefa;
   background-image: linear-gradient(to right, #87cefa, white);
   color: transparent;
+  -webkit-background-clip: text;
+
   background-clip: text;
 
   /* color: var(--lightblue-800); */
@@ -608,11 +624,29 @@ h6 {
 
 /* * MEDIA * */
 
+/* extra small screens */
+@media screen and (max-width: 574px) {
+  #home-card-container {
+    min-height: 25vh;
+  }
+}
+
+/* small screens */
+@media screen and (min-width: 574px) {
+  #home-card-container {
+    min-height: 25vh;
+  }
+}
+
 /* medium screens */
 @media screen and (min-width: 664px) {
+  #home-card-container {
+    min-height: 25vh;
+  }
+
   #personal-image {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     /* border-radius: 50%; */
     /*    -webkit-mask-image: url('./assets/stamp-mask-image-removebg.png');
    mask-image: url('./assets/stamp-mask-image-removebg.png');
@@ -653,6 +687,10 @@ h6 {
     background-attachment: fixed;
   }
 
+  #home-card-container {
+    min-height: 50vh;
+  }
+
   /* animations */
 
   .slide-right-to-left-home {
@@ -690,6 +728,18 @@ h6 {
   }
   .portfolio-projects-container .card:nth-child(odd) {
     animation: leftToRight 1.25s forwards;
+  }
+}
+
+/* extra extra large screens */
+
+@media screen and (min-width: 1400px) {
+  /*  #home-card-container {
+    min-height: 30vh;
+  } */
+  #personal-image {
+    width: 350px;
+    height: 350px;
   }
 }
 

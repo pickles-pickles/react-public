@@ -33,7 +33,7 @@ const ContainerDiv = styled.section`
 
 const Home = () => {
   return (
-    <ContainerDiv className='row mt-3 mt-lg-0 pt-lg-5' id='home-section'>
+    <ContainerDiv className='row mt-0 pt-4 pt-lg-5' id='home-section'>
       <div
         className='col-sm-12
                 col-md-8 offset-md-2
@@ -67,7 +67,7 @@ const Home = () => {
 
         <div
           className='bg-warning1 d-flex justify-content-center align-items-center position-relative'
-          style={{ minHeight: '50vh' }}
+          id='home-card-container'
         >
           <HomeCard />
         </div>
