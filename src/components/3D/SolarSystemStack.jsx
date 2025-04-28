@@ -43,7 +43,7 @@ function Planet ({ position, label, mapSrc }) {
     <group ref={planetRef} position={position}>
       <mesh>
         <sphereGeometry args={[0.5, 32, 32]} />
-        <meshStandardMaterial /* color='skyblue' */ map={texture} />
+        <meshStandardMaterial color='hsl(60, 50%, 50%)' map={texture} />
       </mesh>
 
       <Html position={[0, 1, 0]} center>
@@ -79,24 +79,54 @@ function Planet ({ position, label, mapSrc }) {
 const orbits = 4
 const step = 360 / orbits
 const planetData = [
-  { radius: 3, angle: 0, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 3, angle: 180, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 8, angle: step + 0, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 8, angle: step + 180, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 8, angle: step + 270, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 21, angle: step + 0, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 21, angle: step + 60, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 21, angle: step + 120, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 21, angle: step + 180, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 21, angle: step + 240, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 21, angle: step + 300, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 0, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 45, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 90, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 125, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 180, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 270, mapSrc: '/src/assets/aylo-logo.png' },
-  { radius: 33, angle: step * 2 + 335, mapSrc: '/src/assets/aylo-logo.png' }
+  {
+    radius: 3,
+    angle: 0,
+    mapSrc: '/src/assets/stack-images/ts-js.png',
+    label: 'Typescript - Javascript'
+  },
+  {
+    radius: 3,
+    angle: 180,
+    mapSrc: '/src/assets/stack-images/react-logo.png',
+    label: 'React'
+  },
+  {
+    radius: 8,
+    angle: step + 0,
+    mapSrc: '/src/assets/stack-images/html-logo.webp',
+    label: 'HTML'
+  },
+  {
+    radius: 8,
+    angle: step + 180,
+    mapSrc: '/src/assets/stack-images/css-logo.webp',
+    CSS
+  },
+  {
+    radius: 8,
+    angle: step + 270,
+    mapSrc: '/src/assets/stack-images/docker-logo.jpg',
+    label: 'Docker'
+  },
+  {
+    radius: 21,
+    angle: step + 0,
+    mapSrc: '/src/assets/stack-images/python-logo.png',
+    label: 'Python'
+  },
+  {
+    radius: 21,
+    angle: step + 60,
+    mapSrc: '/src/assets/stack-images/redux-logo.png',
+    label: 'Redux'
+  },
+  {
+    radius: 21,
+    angle: step + 60,
+    mapSrc: '/src/assets/stack-images/nodejs-logo.png',
+    label: 'Node'
+  }
   /*  { label: 'Build web apps', radius: 3, angle: 0 },
   { label: 'Build websites', radius: 3, angle: 180 },
   { label: 'Offer mentorship', radius: 8, angle: 60 },
@@ -140,7 +170,11 @@ export default function SolarSystemStack () {
             key={idx}
             position={[x, 0, z]}
             label={planet.label}
-            mapSrc={planet.mapSrc}
+            mapSrc={
+              planet.mapSrc === '/src/assets/stack-images/aylo-logo.png'
+                ? '/src/assets/stack-images/ts-js.png'
+                : planet.mapSrc
+            }
           />
         )
       })}
