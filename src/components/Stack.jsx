@@ -6,7 +6,7 @@ import SpaceTelescopeStack from './3D/SpaceTelescopeStack'
 
 const Stack = () => {
   return (
-    <section style={{ background: 'black' }}>
+    <section id='stack-section' style={{ background: 'black' }}>
       <h1 className='text-center'>My Stack</h1>
       <div
         style={{ height: '80vh', background: 'black', paddingBottom: '10px' }}
