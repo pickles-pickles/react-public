@@ -1,19 +1,22 @@
 import React from 'react'
 import SolarSystem from './3D/SolarSystem'
 import ISSModel from './3D/ISS'
+import SolarSystemStack from './3D/SolarSystemStack'
+import SpaceTelescopeStack from './3D/SpaceTelescopeStack'
 
 const Stack = () => {
   return (
     <section style={{ background: 'black' }}>
-      <h1 className='text-center'>What can I offer</h1>
+      <h1 className='text-center'>My Stack</h1>
       <div
         style={{ height: '80vh', background: 'black', paddingBottom: '10px' }}
       >
-        <SolarSystem />
+        <SolarSystemStack />
+        {/* <SpaceTelescopeStack /> */}
       </div>
-      <div style={{ height: '60vh' }}>
+      {/*       <div style={{ height: '60vh' }}>
         <ISSModel />
-      </div>
+      </div> */}
     </section>
   )
 }
