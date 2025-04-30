@@ -705,8 +705,14 @@ h6 {
 
 /* medium screens */
 @media screen and (min-width: 768px) {
+  #home-section {
+    min-height: max(100vh, 900px);
+  }
   #home-card-container {
     min-height: 25vh;
+  }
+  #home-card {
+    padding-top: 3.5rem;
   }
 
   #personal-image-div {

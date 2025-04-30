@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import HomeCard from './cards/Home/HomeCard'
 
 const ContainerDiv = styled.section`
-  height: 100vh;
+  height: max(100vh, 550px);
   position: relative;
     &:after {
     content: '';
