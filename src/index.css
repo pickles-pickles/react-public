@@ -617,6 +617,11 @@ h6 {
   animation: leftToRight 0.75s forwards;
 }
 
+#list-stck-container {
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+}
+
 /* * MEDIA * */
 
 /* extra small screens */
@@ -756,6 +761,10 @@ h6 {
     &::after {
       background-image: url('./assets/Black-Hole-Disc-mob.jpg');
     }
+  }
+  #list-stck-container {
+    padding-left: 3rem;
+    padding-bottom: 3rem;
   }
 }
 /* large screens */
