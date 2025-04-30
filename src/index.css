@@ -617,6 +617,10 @@ h6 {
   animation: leftToRight 0.75s forwards;
 }
 
+#what-can-i-offer-card-title {
+  font-size: 2rem;
+}
+
 #list-stck-container {
   padding-left: 3rem;
   padding-bottom: 3rem;
