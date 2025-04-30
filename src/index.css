@@ -164,11 +164,6 @@ h6 {
 
     hsla(from var(--cyan-600) h s l / 0.2)
   ); */
-  background: linear-gradient(
-    125deg,
-    var(--primary-blue-800),
-    hsla(166, 100%, 20%, 0.6) 80%
-  );
 }
 
 #home-section-container {
@@ -196,14 +191,6 @@ h6 {
 #subtitle {
   font-size: 300%;
   font-family: var(--font-heading);
-  background-image: linear-gradient(to right, #87cefa, white);
-  mix-blend-mode: exclusion;
-  color: #87cefa;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  /* mix-blend-mode: difference; */
 }
 
 #subtitle-small {
@@ -227,12 +214,6 @@ h6 {
 
 #title {
   font-size: 580%;
-  background-image: linear-gradient(to right, #87cefa, white);
-  mix-blend-mode: exclusion;
-  color: #87cefa;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 #home-card-container {
