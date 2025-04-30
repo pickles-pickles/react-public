@@ -3,7 +3,6 @@ import React from 'react'
 const ListStack = () => {
   return (
     <div className='d-flex justify-content-center py-5'>
-      ;
       <div
         id='list-stck-container'
         className='glass-card
