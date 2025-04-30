@@ -166,6 +166,10 @@ h6 {
   ); */
 }
 
+#home-section-container {
+  margin-left: 0;
+  margin-right: 0;
+}
 #about-image {
   width: 250px;
   height: 330px;
@@ -231,10 +235,11 @@ h6 {
 }
 
 #experience-section {
-  position: relative;
-  width: 100%;
+  /*   position: relative;
+  width: 100%; */
   padding-bottom: min(7%, 80px);
-  &::after {
+  background: #000;
+  /*   &::after {
     content: '';
     position: absolute;
     top: 0;
@@ -244,10 +249,9 @@ h6 {
     opacity: 0.2;
     z-index: -1;
     background-image: url('./assets/Black-Hole-Disc.jpg');
-    /* background-image: linear-gradient(45deg, var(--purple-300), var(--cyan-600)); */
     background-size: 100%;
     background-repeat: no-repeat;
-  }
+  } */
 }
 
 #what-i-offer-section {
@@ -263,7 +267,7 @@ h6 {
     height: 100%;
     opacity: 0.2;
     z-index: -1;
-    background-image: url('./assets/Black-Hole-Disc1.jpg');
+    background-image: url('./assets/Black-Hole-Disc.jpg');
     /* background-image: linear-gradient(45deg, var(--purple-300), var(--cyan-600)); */
     background-size: 100%;
     background-repeat: no-repeat;

@@ -9,7 +9,7 @@ const ListStack = () => {
 '
       >
         <h2 id='stack-list-card-title'>
-          My stack includes industry-standard technology like:
+          My stack includes industry-standard technologies like:
         </h2>
 
         <ul

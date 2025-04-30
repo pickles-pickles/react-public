@@ -33,7 +33,7 @@ const ContainerDiv = styled.section`
 const Home = () => {
   return (
     <ContainerDiv className='mt-0 pt-4 pt-lg-5 pb-5 pb-md-0' id='home-section'>
-      <div className='row'>
+      <div className='row' id='home-section-container'>
         <div
           id='personal-image-div'
           className='col-sm-12
