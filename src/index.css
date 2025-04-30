@@ -617,7 +617,8 @@ h6 {
   animation: leftToRight 0.75s forwards;
 }
 
-#what-can-i-offer-card-title {
+#what-can-i-offer-card-title,
+#stack-list-card-title {
   font-size: 2rem;
 }
 
