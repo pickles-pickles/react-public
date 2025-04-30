@@ -633,7 +633,9 @@ h6 {
   h1 {
     font-size: 3rem;
   }
-
+  #home-section {
+    min-height: max(100vh, 700px);
+  }
   #experience-section h1,
   #what-i-offer-section h1,
   #stack-section h1 {
