@@ -214,6 +214,7 @@ h6 {
 
 #title {
   font-size: 580%;
+  font-family: var(--font-heading);
 }
 
 #home-card-container {
