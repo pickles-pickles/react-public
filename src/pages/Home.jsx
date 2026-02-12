@@ -8,26 +8,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 const Home = () => {
   return (
     <header className='hero container'>
-      <div className='row align-items-center min-vh-75'>
-        {/* Visual Column */}
-        <div
-          className='
-      col-12
-      col-lg-6
-      order-lg-2
-      text-center
-      hero__visual
-    '
-        >
-          <LazyLoadImage
-            src={ImageHome}
-            placeholderSrc={PlaceholderImageHome}
-            alt='Chris – Front-End Engineer'
-            className='hero__image'
-            effect='blur'
-          />
-        </div>
-
+      <div className='row min-vh-75'>
         {/* Text Column */}
         <div className='col-12 col-lg-6 hero__content'>
           <h1 className='hero__title'>
@@ -40,14 +21,34 @@ const Home = () => {
           </p>
 
           <p className='hero__experience'>
-            4 years of experience delivering production React applications in
-            cross-functional teams.
+            <span className='highlight-strong'>
+              4 years of experience delivering production React applications in
+              cross-functional teams.
+            </span>
           </p>
 
-          <div className='hero__cta'>
+          {/* <div className='hero__cta'>
             <a href='#portfolio' className='btn btn-primary'>
               View Portfolio
             </a>
+          </div> */}
+        </div>
+        {/* VISUAL COLUMN */};
+        <div className='col-12 col-lg-6 hero__visual'>
+          {/* BCC Model Placeholder */}
+          <div className='hero__model'>
+            <div className='bcc-placeholder'>BCC Lattice Model</div>
+          </div>
+
+          {/* Portrait */}
+          <div className='hero__portrait'>
+            <LazyLoadImage
+              src={ImageHome}
+              placeholderSrc={PlaceholderImageHome}
+              alt='Chris – Front-End Engineer'
+              className='hero__image'
+              effect='blur'
+            />
           </div>
         </div>
       </div>
