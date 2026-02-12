@@ -7,51 +7,51 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Home = () => {
   return (
-    <div className='container'>
-      <div className='row mt-3'>
+    <header className='hero container'>
+      <div className='row align-items-center min-vh-75'>
+        {/* Visual Column */}
         <div
-          className='col-sm-12
-                col-md-8 offset-md-2
-                  col-lg-6 offset-lg-0
-                  order-lg-last
-                  text-center slide-right-to-left-home-4'
+          className='
+      col-12
+      col-lg-6
+      order-lg-2
+      text-center
+      hero__visual
+    '
         >
           <LazyLoadImage
             src={ImageHome}
-            placeholdersrc={PlaceholderImageHome}
-            alt='Image Alt'
-            id='personal-image'
+            placeholderSrc={PlaceholderImageHome}
+            alt='Chris – Front-End Engineer'
+            className='hero__image'
             effect='blur'
           />
         </div>
-        <div className='col-sm-12 text-center col-lg-6'>
-          <h1 id='title' className='slide-right-to-left-home'>
-            I am Christos Georgakopoulos
-          </h1>
-          <h2 id='subtitle' className='slide-left-to-right-home'>
-            Passionate mid-level React developer
-          </h2>
-          <h2 id='subtitle-smaller' className='slide-right-to-left-home-2'>
-            Msc in Software Engineering for Web and Mobile Applications
-          </h2>
-          <h2 id='subtitle-small' className='slide-left-to-right-home-2'>
-            Open to opportunities
-          </h2>
 
-          <p className='text slide-right-to-left-home-3'>
-            I love front-end development, as my work is very close to the final
-            user. You can learn more
-            <Link to='/about'>
-              <b> about me</b>
-            </Link>{' '}
-            or send me a message.
+        {/* Text Column */}
+        <div className='col-12 col-lg-6 hero__content'>
+          <h1 className='hero__title'>
+            I’m <span className='highlight'>Chris</span>
+          </h1>
+
+          <p className='hero__role'>
+            Front-End Engineer with a background in Materials Science and
+            Software Engineering.
           </p>
-          <div className='slide-right-to-left-home-4'>
-            <Form />
+
+          <p className='hero__experience'>
+            4 years of experience delivering production React applications in
+            cross-functional teams.
+          </p>
+
+          <div className='hero__cta'>
+            <a href='#portfolio' className='btn btn-primary'>
+              View Portfolio
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

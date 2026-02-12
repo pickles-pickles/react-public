@@ -27,31 +27,6 @@ footer p {
   color: rgb(67, 68, 69);
 }
 
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-form #message-area,
-form #message-area-about {
-  width: 80%;
-}
-
-form #message-area-about {
-  width: 80%;
-}
-
 /* *ID* */
 #about-image {
   width: 250px;
@@ -59,31 +34,62 @@ form #message-area-about {
   border-radius: 50%;
 }
 
-#personal-image {
-  width: 250px;
-  height: 250px;
+.hero__content {
+  max-width: 34rem; /* ~544px readable line length */
+  margin: 0 auto;
+}
+
+.hero__content > * + * {
+  margin-top: 1.25rem;
+}
+
+/* Typography scale */
+.hero__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero__role {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.hero__experience {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Image 
+ $UPDATE IMAGE
+*/
+.hero__image {
+  width: clamp(12rem, 25vw, 18rem);
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
+  object-fit: cover;
+}
+.hero__title::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 3px;
+  margin-top: 1rem;
+  background-color: #2563eb;
 }
 
-#subtitle {
-  font-size: 200%;
+.highlight {
+  color: #2563eb;
 }
 
-#subtitle-small {
-  font-size: 170%;
-}
-
-#subtitle-smaller {
-  font-size: 150%;
-  color: #6b6b6b;
+.min-vh-75 {
+  min-height: 75vh;
 }
 
 #success-button {
   width: 100%;
-}
-
-#title {
-  font-size: 280%;
 }
 
 /* *CLASSES* */
@@ -376,9 +382,14 @@ form #message-area-about {
 }
 /* large screens */
 @media screen and (min-width: 992px) {
-  .container {
-    max-width: 75% !important;
+  .hero {
+    padding: 4rem 0;
   }
+
+  .hero__content {
+    margin: 0;
+  }
+
   .side-container {
     width: 12.5%;
     min-width: 12.5%;
