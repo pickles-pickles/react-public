@@ -6,38 +6,21 @@ const Portfolio = () => {
   return (
     <div className='container'>
       <h1>Portfolio</h1>
-
-      <p className='text'>
-        Here are some of my sideprojects. They are <b>live sites</b>, React apps
-        I deployed to{' '}
-        <a href='https://www.netlify.com/' target='_blank' rel='noreferrer'>
-          Netlify
-        </a>
-        . The last one is a full-stack app that is not live at the moment.
-        However, you can visit the{' '}
-        <a
-          href='https://github.com/pickles-pickles/recipes/'
-          target='_blank'
-          rel='noreferrer'
-        >
-          github repo
-        </a>{' '}
-        to take a look on the code.
-      </p>
-      <p className='text'>Some apps include:</p>
-      <div className='portfolio-projects-container'>
-        {' '}
-        {projectsList.map(project => (
-          <PortfolioEntryCard
-            title={project.title}
-            link={project.link}
-            stack={project.stack}
-            description={project.description}
-            details={project.details}
-            key={project.title}
-            imgSrc={project.imgSrc}
-          />
-        ))}
+      <h2>Here is a high-level description of my duties and their impact</h2>
+      <div>
+        <p>
+          Laser-Control App – Medium Company Front-End Developer & Team Lead
+          Real-time updates via SSE/WebSockets Led team of 3, code reviews &
+          architecture Testing suite & CI/CD pipelines Impact: Stable interface,
+          scalable patterns, improved team efficiency
+        </p>
+      </div>
+      <div>
+        <p>
+          Internal Operations App – Large Corp Junior Front-End Developer
+          Efficient pagination & state mgmt Error handling & edge cases Learned
+          large-scale front-end Impact: Scalable systems, maintainable code
+        </p>
       </div>
     </div>
   )
