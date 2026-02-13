@@ -30,11 +30,6 @@ const About = () => {
         {/* Intro */}
         <header className='about__header'>
           <h2>About</h2>
-          <p className='about__lead'>
-            Front-End Engineer with 4 years of experience delivering
-            production-grade React applications in enterprise and
-            product-focused environments.
-          </p>
         </header>
         {/* Summary */}
         <div className='about__summary'>
@@ -53,24 +48,21 @@ const About = () => {
         {/* Experience Themes */}
         <section className='about__experience'>
           <h3>Professional Focus</h3>
-          <ul>
+          <ul className='about__list'>
             <li>
-              Development of large-scale internal platforms, addressing
-              pagination, state management, and robust error handling.
+              Scalable front-end architecture for complex internal platforms
             </li>
             <li>
-              Implementation of real-time features using Server-Sent Events and
-              WebSockets.
+              Real-time interfaces using Server-Sent Events and WebSockets
             </li>
             <li>
-              Integration of automated testing suites and CI/CD pipelines into
-              production workflows.
+              Reliability through testing strategy and deployment workflows
             </li>
             <li>
-              Architectural guidance and code reviews within a Django monolith
-              environment.
+              Architectural decision-making and code reviews within monolithic
+              backends
             </li>
-            <li>Technical leadership of a small engineering team.</li>
+            <li>Technical leadership in small engineering teams</li>
           </ul>
         </section>
         {/* Stack */}
