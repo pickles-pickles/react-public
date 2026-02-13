@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='col text-right mr-1'>
-            <p>Made by Christos Georgakopoulos, 2021</p>
+            <p>Made by Christos Georgakopoulos, 2026</p>
           </div>
         </div>
       </div>
