@@ -118,6 +118,47 @@ footer p {
   width: 100%;
 }
 
+.about {
+  padding: 6rem 0;
+  max-width: 46rem;
+}
+
+.about__header {
+  margin-bottom: 2.5rem;
+}
+
+.about__lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.about section {
+  margin-top: 3rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  line-height: 1.7;
+}
+
+.about ul {
+  padding-left: 1.25rem;
+  line-height: 1.7;
+}
+
+.about ul li + li {
+  margin-top: 0.75rem;
+}
+
 /* *CLASSES* */
 
 .icon {
@@ -527,7 +568,8 @@ footer p {
 .dark h4,
 .dark h5,
 .dark h6,
-.dark p {
+.dark p,
+.dark ul {
   color: #d2d2d2;
 }
 
