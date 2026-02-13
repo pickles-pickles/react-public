@@ -146,8 +146,10 @@ footer p {
   margin-bottom: 1rem;
 }
 
-.about p {
+.about p,
+.portfolio p {
   line-height: 1.7;
+  font-size: 1.125rem;
 }
 
 .about ul {
