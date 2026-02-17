@@ -34,7 +34,7 @@ const Home = () => {
             </a>
           </div> */}
         </div>
-        {/* VISUAL COLUMN */};
+        {/* VISUAL COLUMN */}
         <div className='col-12 col-lg-6 hero__visual'>
           {/* BCC Model Placeholder */}
           <div className='hero__model'>
