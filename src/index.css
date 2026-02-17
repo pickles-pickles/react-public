@@ -79,7 +79,7 @@ footer p {
 .bcc-placeholder {
   width: 100%;
   height: 100%;
-  border: 2px dashed #cbd5e1;
+  /* border: 2px dashed #cbd5e1; */
   display: flex;
   align-items: center;
   justify-content: center;

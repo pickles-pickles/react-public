@@ -4,6 +4,7 @@ import Form from '../components/Form'
 import ImageHome from '../assets/laptop.jpg'
 import PlaceholderImageHome from '../assets/laptop-mobile-min.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import BCCLatticeScene from '../components/BCCLatticeScene'
 
 const Home = () => {
   return (
@@ -37,7 +38,10 @@ const Home = () => {
         <div className='col-12 col-lg-6 hero__visual'>
           {/* BCC Model Placeholder */}
           <div className='hero__model'>
-            <div className='bcc-placeholder'>BCC Lattice Model</div>
+            <div className='bcc-placeholder'>
+              {/* BCC Lattice Model */}
+              <BCCLatticeScene />{' '}
+            </div>
           </div>
 
           {/* Portrait */}
