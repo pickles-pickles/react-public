@@ -722,9 +722,9 @@ h6 {
   h1 {
     font-size: 3rem;
   }
-  #home-section {
+  /*   #home-section {
     min-height: max(100vh, 700px);
-  }
+  } */
   #experience-section h1,
   #what-i-offer-section h1,
   #stack-section h1 {
@@ -805,9 +805,9 @@ h6 {
 
 /* medium screens */
 @media screen and (min-width: 768px) {
-  #home-section {
+  /*   #home-section {
     min-height: max(100vh, 900px);
-  }
+  } */
   #home-card-container {
     min-height: 25vh;
   }
