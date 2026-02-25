@@ -4,7 +4,6 @@ import Form from '../components/Form'
 import ImageHome from '../assets/laptop.jpg'
 import PlaceholderImageHome from '../assets/laptop-mobile-min.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import MaskImage from './MaskImage'
 import styled from 'styled-components'
 import HomeCard from './cards/Home/HomeCard'
 
@@ -34,7 +33,32 @@ const Home = () => {
   return (
     <ContainerDiv className='mt-0 pt-4 pt-lg-5 pb-5 pb-md-0' id='home-section'>
       <div className='row' id='home-section-container'>
-        <div
+        {/*  */}
+        <div className='col-12 col-lg-6 hero__content'>
+          <h1 className='slide-right-to-left-home mt-4 mt-lg-0 hero__title'>
+            I’m <span className='highlight'>Chris</span>
+          </h1>
+          {/*  */}
+
+          <p className='hero__role slide-left-to-right-home'>
+            Front-End Engineer with a background in Materials Science and
+            Software Engineering.
+          </p>
+
+          <p
+            className='hero__experience slide-right-to-left-home-2'
+            id='subtitle-smaller'
+          >
+            <span className='highlight-strong'>
+              4 years of experience delivering production React applications in
+              cross-functional teams.
+            </span>
+          </p>
+        </div>
+      </div>
+    </ContainerDiv>
+
+    /* <div
           id='personal-image-div'
           className='col-sm-12
                 col-md-8 offset-md-2
@@ -52,29 +76,7 @@ const Home = () => {
               style: {}
             }}
           />
-        </div>
-        <div className='col-sm-12 text-center col-lg-6'>
-          <div className='col-lg-12'>
-            <h1 id='title' className='slide-right-to-left-home mt-4 mt-lg-0'>
-              I am Chris
-            </h1>
-            <h2 id='subtitle' className='slide-left-to-right-home'>
-              React developer
-            </h2>
-            <h2 id='subtitle-smaller' className='slide-right-to-left-home-2'>
-              MSc in Software Engineering
-            </h2>
-          </div>
-
-          <div
-            className='bg-warning1 d-flex justify-content-center align-items-center position-relative'
-            id='home-card-container'
-          >
-            <HomeCard />
-          </div>
-        </div>
-      </div>
-    </ContainerDiv>
+        </div> */
   )
 }
 

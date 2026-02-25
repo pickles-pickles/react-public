@@ -180,12 +180,6 @@ h6 {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  /*   -webkit-mask-image: url('./assets/stamp-mask-image-round-ChatGPT.png');
-  mask-image: url('./assets/stamp-mask-image-round-ChatGPT.png');
-  mask-repeat: no-repeat; 
-  -webkit-mask-repeat: no-repeat;
-  mask-size: contain;
-  -webkit-mask-size: contain; */
 }
 
 #subtitle {
@@ -198,7 +192,6 @@ h6 {
 }
 
 #subtitle-smaller {
-  font-size: 200%;
   color: var(--cyan-600) /* #6b6b6b */;
   margin-bottom: 2rem;
   font-family: var(--font-heading);
@@ -235,6 +228,95 @@ h6 {
   overflow-y: hidden;
 }
 
+/* !! */
+
+#about-image {
+  width: 250px;
+  height: 330px;
+  border-radius: 50%;
+}
+
+.hero__content {
+  max-width: 34rem; /* ~544px readable line length */
+  margin: 0 auto;
+}
+
+.hero__content > * + * {
+  margin-top: 1.25rem;
+}
+
+/* Typography scale */
+.hero__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero__role {
+  font-size: 1.5rem;
+  /*  color: #4b5563; */
+  line-height: 1.75;
+}
+
+.hero__experience {
+  font-size: 1.25rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Visual column */
+.hero__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* BCC placeholder */
+.hero__model {
+  width: clamp(14rem, 30vw, 20rem);
+  aspect-ratio: 1 / 1;
+}
+
+.bcc-placeholder {
+  width: 100%;
+  height: 100%;
+  /* border: 2px dashed #cbd5e1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  border-radius: 0.75rem;
+}
+
+/* Image 
+ $UPDATE IMAGE
+*/
+.hero__image {
+  width: clamp(12rem, 25vw, 18rem);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.hero__title::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 3px;
+  margin-top: 1rem;
+  background-color: #2563eb;
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+/* !!! */
 #experience-section {
   /*   position: relative;
   width: 100%; */
@@ -661,7 +743,7 @@ h6 {
   }
 
   #subtitle-smaller {
-    font-size: 150%;
+    /* font-size: 150%; */
   }
   #home-card-container {
     min-height: 25vh;
@@ -755,7 +837,7 @@ h6 {
     font-size: 400%;
   }
   #subtitle-smaller {
-    font-size: 350%;
+    /* font-size: 350%; */
   }
 
   #about-image {
