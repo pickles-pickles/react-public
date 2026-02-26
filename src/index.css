@@ -764,6 +764,16 @@ h6 {
   /*   #home-section {
     min-height: max(100vh, 700px);
   } */
+
+  #home-section-container {
+    height: 100%;
+  }
+  /* BCC placeholder */
+  .hero__model {
+    width: clamp(14rem, 70vw, 574px);
+    aspect-ratio: 1 / 1;
+  }
+
   #experience-section h1,
   #what-i-offer-section h1,
   #stack-section h1 {
@@ -779,6 +789,13 @@ h6 {
 
   #subtitle-small {
     font-size: 180%;
+  }
+
+  .slide-left-to-right-home {
+    animation: leftToRight 0.5s forwards;
+  }
+  .hero__role {
+    line-height: 1.45;
   }
 
   #subtitle-smaller {
@@ -830,6 +847,10 @@ h6 {
 @media screen and (min-width: 574px) {
   h1 {
     font-size: 3rem;
+  }
+
+  #home-section-container {
+    height: 100%;
   }
 
   #experience-section h1,
@@ -912,6 +933,10 @@ h6 {
 }
 /* large screens */
 @media screen and (min-width: 992px) {
+  #home-section-container {
+    height: max-content;
+  }
+
   .container {
     max-width: 75% !important;
     padding-top: 2rem;
