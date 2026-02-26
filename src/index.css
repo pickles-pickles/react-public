@@ -800,6 +800,15 @@ h6 {
       background-image: url('./assets/Black-Hole-Disc-mob.jpg');
     }
   }
+
+  #list-stck-container {
+    padding-left: 0;
+  }
+  .stack-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw; /* prevent overflow */
+  }
+
   .glass-card {
     width: 85vw;
   }
