@@ -489,6 +489,42 @@ h6 {
   /* mix-blend-mode: difference; */ /* $TODO: make the home screen also with mix-blend mode if i want to keep that. OR Keep this filter with 40% in back ground, instead of 80% */
 }
 
+.stack-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.stack-card {
+  /* width: 20vw; */
+  /* min-height: 30px; */
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(
+    125deg,
+    var(--primary-blue-800),
+    hsla(from var(--lightblue-900) h s l / 0.6) 80%
+  );
+
+  /* * fallback if 'from' is not supported */
+  background: linear-gradient(
+    125deg,
+    var(--primary-blue-800),
+    hsla(166, 100%, 20%, 0.6) 80%
+  );
+  /*  */
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
 .vertical-hr {
   width: 1px;
   background-color: #999;
@@ -709,6 +745,8 @@ h6 {
 #what-can-i-offer-card-title,
 #stack-list-card-title {
   font-size: 2rem;
+  text-align: center;
+  color: white;
 }
 
 #list-stck-container {

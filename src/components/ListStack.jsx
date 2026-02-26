@@ -1,33 +1,43 @@
 import React from 'react'
 
+const stackItems = [
+  'React',
+  'Redux',
+  'Bootstrap',
+  'TypeScript',
+  'Material UI',
+  'Python',
+  'Docker',
+  'ECharts',
+  'CSS Preprocessors',
+  'Node',
+  'Express'
+]
+
 const ListStack = () => {
   return (
-    <div className='d-flex justify-content-center py-5'>
+    <div
+      className='stack - wrapper
+ py-5'
+    >
+      <h2 id='stack-list-card-title'>
+        My stack includes industry-standard technologies like:
+      </h2>
       <div
         id='list-stck-container'
-        className='glass-card
+        className='stack-wrapper
 '
       >
-        <h2 id='stack-list-card-title'>
-          My stack includes industry-standard technologies like:
-        </h2>
-
-        <ul
-          className='experience-card-subtitle
-'
-        >
-          <li>React</li>
-          <li>Redux</li>
-          <li>Bootstrap</li>
-          <li>Typescript</li>
-          <li>Material UI</li>
-          <li>Python</li>
-          <li>Docker</li>
-          <li>Echarts</li>
-          <li>CCS preprocessors</li>
-          <li>Node</li>
-          <li>Express</li>
-        </ul>
+        {stackItems.map((item, index) => (
+          <div
+            key={item}
+            className={`stack-card ${
+              index % 2 === 0 ? 'from-left' : 'from-right'
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
     </div>
   )
