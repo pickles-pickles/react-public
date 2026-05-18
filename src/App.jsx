@@ -1,4 +1,4 @@
-import './App.css'
+/* import './App.css' */
 import React from 'react'
 import { HashRouter as Router } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ const Main = React.lazy(async () => {
 
 function App () {
   return (
-    <div className='App'>
+    <>
       <Router>
         <React.Suspense
           fallback={
@@ -24,7 +24,7 @@ function App () {
           <Main />
         </React.Suspense>
       </Router>
-    </div>
+    </>
   )
 }
 
