@@ -752,6 +752,12 @@ h6 {
   pointer-events: none;
 }
 
+/* 
+.what-i-offer-card-list {
+  font-size: 1rem;
+  line-height: 1.6;
+} */
+
 /* *LOADER* */
 .loader-stage {
   width: 100%;
@@ -1281,6 +1287,21 @@ h6 {
 
 .react-toggle--checked .react-toggle-thumb {
   border-color: gray;
+}
+
+@media (max-width: 576px) {
+  #what-can-i-offer-card-title {
+    font-size: 1.3rem;
+  }
+
+  .what-i-offer-card-list {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .what-i-offer-card-list li {
+    margin-bottom: 0.4rem;
+  }
 }
 
 /* * DARK THEME * */
