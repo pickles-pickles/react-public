@@ -9,12 +9,19 @@ import HomeCard from './cards/Home/HomeCard';
 import BCCLatticeScene from './3D/BCCLatticeScene';
 
 const ContainerDiv = styled.section`
-  height: max(100vh, 550px);
+    min-height: 100vh;
   position: relative;
   overflow: hidden;
   isolation: isolate;
   display: flex;
   flex-direction: column;
+  @media (max-width: 991px) {
+    overflow: visible;
+  }
+
+  @media (min-width: 992px) {
+    height: max(100vh, 550px);
+  }
 `;
 
 const BackgroundLayer = styled.div`
@@ -41,7 +48,15 @@ const BackgroundLayer = styled.div`
 `;
 
 const CardSection = styled.div`
-  flex: 1; /* takes remaining space */
+padding: 2rem 0;
+
+  @media (min-width: 992px) {
+    flex: 1; /* takes remaining space */
+  }
+
+  @media (max-width: 991px) {
+    flex: none;
+  }
 
   display: flex;
   align-items: center; /* vertical center */
@@ -94,32 +109,31 @@ const Home = () => {
         </div>
       </div>
 
-      <CardSection id='test' className='row d-none d-lg-flex align-items-center justify-content-center mt-auto mb-0'>
-        <div className=' col-8 '>
-          <div className="glass-card text-center fancy-card">
-            <p className="card-eyebrow">
-              Building scalable digital products
-            </p>
+      <CardSection id="test" className="mt-auto mb-0">
+        <div className="glass-card text-center fancy-card card-wrapper">
+          <p className="card-eyebrow">
+            Building scalable digital products
+          </p>
 
-            <h3 className="card-title">
-              Real-time Web Apps · Dashboards · CI/CD
-            </h3>
+          <h3 className="card-title">
+            Real-time Web Apps · Dashboards · CI/CD
+          </h3>
 
-            <p className="card-subtitle">
-              Product & platform engineering with
-              <span> TypeScript</span> and
-              <span> Python</span>-based systems
-            </p>
+          <p className="card-subtitle">
+            Product & platform engineering with
+            <span> TypeScript</span> and
+            <span> Python</span>-based systems
+          </p>
 
-            <div className="tech-tags">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Python</span>
-              <span>WebSockets</span>
-              <span>CI/CD</span>
-            </div>
+          <div className="tech-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Python</span>
+            <span>WebSockets</span>
+            <span>CI/CD</span>
           </div>
         </div>
+
 
       </CardSection>
     </ContainerDiv>

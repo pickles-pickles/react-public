@@ -350,6 +350,17 @@ h6 {
     box-shadow 250ms ease;
 }
 
+@media (max-width: 576px) {
+  .fancy-card {
+    padding: 1.25rem 1rem;
+  }
+}
+
+.card-wrapper {
+  width: min(720px, 92vw);
+  margin: 0 auto;
+}
+
 .fancy-card::before {
   content: '';
 
@@ -415,6 +426,12 @@ h6 {
     0 0 18px rgba(140, 120, 255, 0.12);
 }
 
+@media (max-width: 576px) {
+  .fancy-card {
+    padding: 1.25rem 1rem;
+  }
+}
+
 /* Dark Reader compatibility */
 [data-darkreader-scheme],
 [data-darkreader-mode] .card-title,
@@ -434,6 +451,7 @@ h6 {
   max-width: 700px;
   margin: 0 auto 1.4rem;
 }
+
 
 .card-subtitle span {
   color: rgba(255, 255, 255, 0.95);
