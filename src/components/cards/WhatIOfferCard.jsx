@@ -8,10 +8,10 @@ const WhatIOfferCard = () => {
         I have the expertise to:
       </h2>
       <ul className='experience-card-subtitle what-i-offer-card-list text-left pt-3'>
-        <li>Build error-proof real-time web apps</li>
-        <li>Translate businees requirements to technical specs</li>
+        <li>Build error-proof real-time  apps</li>
+        <li>Translate business needs to technical specs</li>
         <li>Contribute to documenting complex systems</li>
-        <li>Work as part o fmulti-disciplinary teams</li>
+        <li>Work as part of multi-disciplinary teams</li>
       </ul>
     </div>
   )

@@ -1291,12 +1291,12 @@ h6 {
 
 @media (max-width: 576px) {
   #what-can-i-offer-card-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .what-i-offer-card-list {
-    font-size: 0.95rem;
-    line-height: 1.55;
+    font-size: 1.15rem;
+    line-height: 1.65;
   }
 
   .what-i-offer-card-list li {
