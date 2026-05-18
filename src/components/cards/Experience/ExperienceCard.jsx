@@ -1,4 +1,6 @@
 import React from 'react'
+import RaymetricsLogo from "/assets/raymetrics-logo.png";
+import AyloLogo from "/assets/aylo-logo.png";
 
 const ExperienceCard = () => {
   return (
@@ -13,7 +15,7 @@ const ExperienceCard = () => {
             }}
           >
             <img
-              src='/src/assets/raymetrics-logo.png'
+              src={RaymetricsLogo}
               alt='raymetrics logo'
               srcset=''
               width={28}
@@ -44,7 +46,7 @@ const ExperienceCard = () => {
             }}
           >
             <img
-              src='/src/assets/aylo-logo.png'
+              src={AyloLogo}
               alt='aylo logo'
               srcset=''
               width={36}
