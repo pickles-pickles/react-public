@@ -13,6 +13,8 @@ const ContainerDiv = styled.section`
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
 `;
 
 const BackgroundLayer = styled.div`
@@ -36,6 +38,14 @@ const BackgroundLayer = styled.div`
 
   filter: none !important;
   mix-blend-mode: normal !important;
+`;
+
+const CardSection = styled.div`
+  flex: 1; /* takes remaining space */
+
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
 `;
 
 const Home = () => {
@@ -83,6 +93,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <CardSection id='test' className='row d-none d-lg-flex align-items-center justify-content-center mt-auto mb-0'>
+        <div className=' col-8 '>
+          <div className="glass-card  text-center">
+            <p>Specialized in real-time Web Apps | Dashboards | CI/CD | product/platform development</p>
+            <p>Typescript and Python-based systems</p>
+          </div>
+        </div>
+
+      </CardSection>
     </ContainerDiv>
   );
 };
