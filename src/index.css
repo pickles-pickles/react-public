@@ -1302,6 +1302,11 @@ h6 {
   .what-i-offer-card-list li {
     margin-bottom: 0.4rem;
   }
+
+  .experience-card-subtitle {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
 }
 
 /* * DARK THEME * */
