@@ -145,31 +145,6 @@ h6 {
 
 /* *ID* */
 
-#home-section {
-  /* background-image: linear-gradient(
-    45deg,
-    hsla(from var(--purple-600) h s l / 0.3),
-    hsla(from var(--purple-400) h s l / 0.3) 5%,
-    hsla(from var(--purple-300) h s l / 0.3) 20%,
-    hsla(from var(--cyan-900) h s l / 0.5) 90%,
-    hsla(from var(--cyan-600) h s l / 0.3)
-  );
-  background-image: linear-gradient(
-    45deg,
-    hsla(from var(--purple-400) h s l / 0.2) 5%,
-    hsla(from var(--cyan-900) h s l / 0.5) 90%,
-    hsla(from var(--cyan-600) h s l / 0.2)
-  );
-  background-image: linear-gradient(
-    45deg,
-    hsla(from var(--purple-400) h s l / 0.2),
-    hsla(from var(--primary-blue-700) h s l / 0.2) 5%,
-    hsla(from var(--primary-blue-700) h s l / 0.2) 90%,
-
-    hsla(from var(--cyan-600) h s l / 0.2)
-  ); */
-}
-
 #home-section-container {
   margin-left: 0;
   margin-right: 0;
@@ -1009,10 +984,6 @@ h6 {
     line-height: 1.45;
   }
 
-  #subtitle-smaller {
-    /* font-size: 150%; */
-  }
-
   #home-card-container {
     min-height: 25vh;
   }
@@ -1124,10 +1095,6 @@ h6 {
 
   #subtitle {
     font-size: 400%;
-  }
-
-  #subtitle-smaller {
-    /* font-size: 350%; */
   }
 
   #about-image {
