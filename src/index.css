@@ -688,16 +688,39 @@ h6 {
 }
 
 .experience-card-subtitle {
-  font-size: 2rem;
-  mix-blend-mode: exclusion;
-  color: #87cefa;
-  background-image: linear-gradient(to right, #87cefa, white);
-  color: transparent;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+
+  /* fallback for accessibility + Dark Reader */
+  color: rgba(235, 245, 255, 0.95);
+
+  /* visual enhancement */
+  background-image: linear-gradient(90deg,
+      #87cefa,
+      rgba(255, 255, 255, 0.95));
+
   -webkit-background-clip: text;
-
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  /* color: var(--lightblue-800); */
+  text-shadow:
+    0 0 14px rgba(135, 206, 250, 0.08);
+
+  letter-spacing: -0.02em;
+}
+
+/* Dark Reader compatibility */
+[data-darkreader-mode] .experience-card-subtitle,
+[data-darkreader-scheme] .experience-card-subtitle,
+.darkreader .experience-card-subtitle {
+  background: none !important;
+  -webkit-text-fill-color: unset !important;
+
+  color: rgba(245, 248, 255, 0.96) !important;
+
+  text-shadow:
+    0 0 12px rgba(135, 206, 250, 0.12);
 }
 
 .experience-card-smaller-subtitle {
