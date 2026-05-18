@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Space Grotesk';
-  src: url('./assets/fonts/space-grotesk-font-family-1745392453-0/SpaceGrotesk-Regular-BF6a712f001.ttf')
-    format('truetype');
+  src: url('./assets/fonts/space-grotesk-font-family-1745392453-0/SpaceGrotesk-Regular-BF6a712f001.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -10,6 +9,7 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   margin: 0;
   padding: 0;
@@ -21,7 +21,8 @@
   /* Primary Blue Shades (Dark to Light) */
   --primary-blue-900: hsl(216, 65%, 5%);
   --primary-blue-800: hsl(216, 65%, 8%);
-  --primary-blue-700: hsl(216, 65%, 11%); /* Original */
+  --primary-blue-700: hsl(216, 65%, 11%);
+  /* Original */
   --primary-blue-600: hsl(216, 65%, 20%);
   --primary-blue-500: hsl(216, 65%, 30%);
   --primary-blue-400: hsl(216, 65%, 45%);
@@ -35,7 +36,8 @@
   --lightblue-700: hsl(166, 100%, 40%);
   --lightblue-600: hsl(166, 100%, 50%);
   --lightblue-500: hsl(166, 100%, 60%);
-  --lightblue-400: hsl(166, 100%, 70%); /* Original */
+  --lightblue-400: hsl(166, 100%, 70%);
+  /* Original */
   --lightblue-300: hsl(166, 100%, 75%);
   --lightblue-200: hsl(166, 100%, 85%);
   --lightblue-100: hsl(166, 100%, 95%);
@@ -46,7 +48,8 @@
   --purple-700: hsl(266, 100%, 35%);
   --purple-600: hsl(266, 100%, 45%);
   --purple-500: hsl(266, 100%, 55%);
-  --purple-400: hsl(266, 100%, 67.5%); /* Original */
+  --purple-400: hsl(266, 100%, 67.5%);
+  /* Original */
   --purple-300: hsl(266, 100%, 75%);
   --purple-200: hsl(266, 100%, 85%);
   --purple-100: hsl(266, 100%, 95%);
@@ -59,8 +62,15 @@ body {
   color: var(--primary-blue-100);
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 #hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
