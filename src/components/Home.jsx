@@ -96,9 +96,28 @@ const Home = () => {
 
       <CardSection id='test' className='row d-none d-lg-flex align-items-center justify-content-center mt-auto mb-0'>
         <div className=' col-8 '>
-          <div className="glass-card  text-center">
-            <p>Specialized in real-time Web Apps | Dashboards | CI/CD | product/platform development</p>
-            <p>Typescript and Python-based systems</p>
+          <div className="glass-card text-center fancy-card">
+            <p className="card-eyebrow">
+              Building scalable digital products
+            </p>
+
+            <h3 className="card-title">
+              Real-time Web Apps · Dashboards · CI/CD
+            </h3>
+
+            <p className="card-subtitle">
+              Product & platform engineering with
+              <span> TypeScript</span> and
+              <span> Python</span>-based systems
+            </p>
+
+            <div className="tech-tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Python</span>
+              <span>WebSockets</span>
+              <span>CI/CD</span>
+            </div>
           </div>
         </div>
 
