@@ -5,13 +5,13 @@ const WhatIOfferCard = () => {
     <div className=' glass-card'>
       {' '}
       <h2 id='what-can-i-offer-card-title'>
-        Achieve your business goals with my:
+        I have the expertise to:
       </h2>
       <ul className='experience-card-subtitle what-i-offer-card-list text-left pt-3'>
-        <li>Front-end expertise</li>
-        <li>Efficient work as part of a team and indepedently</li>
-        <li>Requirements Specification</li>
-        <li>Documentation Writing</li>
+        <li>Build error-proof real-time web apps</li>
+        <li>Translate businees requirements to technical specs</li>
+        <li>Contribute to documenting complex systems</li>
+        <li>Work as part o fmulti-disciplinary teams</li>
       </ul>
     </div>
   )
