@@ -4,7 +4,7 @@ import AyloLogo from "/assets/aylo-logo.png";
 
 const ExperienceCard = () => {
   return (
-    <div className='experience-card glass-card'>
+    <div className='experience-card glass-card mb-3 mb-lg-0'>
       <div className='row my-3'>
         <div className='col-2 d-flex  justify-content-center'>
           <span

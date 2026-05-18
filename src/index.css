@@ -752,11 +752,6 @@ h6 {
   pointer-events: none;
 }
 
-/* 
-.what-i-offer-card-list {
-  font-size: 1rem;
-  line-height: 1.6;
-} */
 
 /* *LOADER* */
 .loader-stage {
@@ -1294,13 +1289,15 @@ h6 {
     font-size: 1.4rem;
   }
 
-  .what-i-offer-card-list {
+  #what-i-offer-card-list {
     font-size: 1.15rem;
     line-height: 1.65;
   }
 
-  .what-i-offer-card-list li {
+  #what-i-offer-card-list li {
     margin-bottom: 0.4rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
   }
 
   .experience-card-subtitle {
