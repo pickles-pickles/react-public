@@ -1,7 +1,5 @@
-import React from 'react'
-import Home from '../components/Home'
-import HomeTest from '../components/HomeTest'
 import Experience from '../components/Experience'
+import Home from '../components/Home'
 import Stack from '../components/Stack'
 import WhatIOffer from '../components/sections/WhatIOffer'
 
@@ -12,8 +10,6 @@ const ScrollView = () => {
       <Experience />
       <WhatIOffer />
       <Stack />
-
-      {/* <HomeTest/> */}
     </>
   )
 }

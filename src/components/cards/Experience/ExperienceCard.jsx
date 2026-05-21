@@ -17,7 +17,7 @@ const ExperienceCard = () => {
             <img
               src={RaymetricsLogo}
               alt='raymetrics logo'
-              srcset=''
+              srcSet=''
               width={28}
               height={28}
               style={{
@@ -48,7 +48,7 @@ const ExperienceCard = () => {
             <img
               src={AyloLogo}
               alt='aylo logo'
-              srcset=''
+              srcSet=''
               width={36}
               height={36}
             />
