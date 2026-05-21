@@ -8,7 +8,7 @@ const Main = () => {
       <Switch>
         <Route exact path='/' component={ScrollView}></Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

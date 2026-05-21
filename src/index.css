@@ -1341,3 +1341,82 @@ h6 {
 .dark a:hover {
   color: #87cefa;
 }
+
+.footer {
+  margin-top: 6rem;
+  padding: 2rem 1.5rem 3rem;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(90%, 1200px);
+  height: 1px;
+
+  background: linear-gradient(to right,
+      transparent,
+      rgba(135, 206, 250, 0.25),
+      transparent);
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  text-decoration: none;
+
+  color: var(--lightblue-800);
+  font-size: 1.2rem;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.footer__icon:hover {
+  transform: translateY(-3px);
+  color: white;
+  background: rgba(135, 206, 250, 0.08);
+}
+
+.footer__copyright {
+  margin: 0;
+  opacity: 0.7;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
