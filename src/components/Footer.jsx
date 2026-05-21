@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
               <div className='icon'>
                 <a
-                  href='https://www.linkedin.com/in/christos-georgakopoulos-a1-a6471a8'
+                  href='https://www.linkedin.com/in/chris-georgakopoulos-web-dev'
                   rel='noopener noreferrer'
                   target='_blank'
                 >
@@ -37,10 +37,20 @@ const Footer = () => {
                   <span className='fas fa-envelope fa-lg'></span>
                 </a>
               </div>
+              <div className='icon'>
+                <a
+                  href='https://drive.google.com/file/d/1sUmc_BFLvq_Fn4NnfuJ8OU-oXyqM_cIk/view?usp=sharing'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  {' '}
+                  <span className='fas fa-file fa-solid fa-lg'></span>
+                </a>
+              </div>
             </div>
           </div>
           <div className='col text-right mr-1'>
-            <p>Made by Christos Georgakopoulos, 2021</p>
+            <p>Chris Georgakopoulos, 2026</p>
           </div>
         </div>
       </div>

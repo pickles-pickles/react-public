@@ -94,7 +94,7 @@ footer hr {
 
 footer p {
   font-size: 120%;
-  color: rgb(67, 68, 69);
+  color: var(--primary-blue-200);
 }
 
 form {
@@ -532,6 +532,10 @@ h6 {
 
 .fa-envelope {
   color: red;
+}
+
+.fa-file {
+  font-size: 1.2rem;
 }
 
 .navbar {
